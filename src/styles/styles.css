@@ -1,16 +1,26 @@
+* {
+  box-sizing:border-box
+}
+
 html {
     background-color: #f1f5f9;
-    font-family: sans-serif;
+
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* LORA FONT - for headings etc */
+    /* font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; */
   }
+  
 
   body {
     margin: 0 auto;
-    width: 100%;
-    max-width: 85%;
+    width: 90%;
+    max-width: 90%;
     padding: 20px;
     line-height: 1.5;
-  }
-
-  * {
-    box-sizing: border-box;
   }

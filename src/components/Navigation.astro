@@ -3,13 +3,48 @@ import '../styles/navigation.css';
 ---
 
 <nav>
-    <ul>
-        <li><a class="logo" href="/">Logo</a></li>
-        <li class="menu-item"><a  href="/despre">Despre</a></li>
-        <li><a class="menu-item" href="/torturi">Torturi</a></li>
-        <li><a class="menu-item" href="/candybar">Candybar</a></li>
-        <li><a class="menu-item" href="/prajituri">Prajituri</a></li>
-        <li><a class="menu-item" href="/comenzi">Comenzi</a></li>
-        <li><a class="menu-item" href="/contact">Contact</a></li>
+    <ul class="initial-menu-list">
+        <li class="logo-menu-item"><a class="logo" href="/">Logo</a></li>
+
+        <ul class="menu-items-list">
+
+            <li><a class="menu-item" href="/despre">Despre</a></li>
+
+            <li class="torturi dropdown-menu">
+                <a class="menu-item" href="/torturi">Torturi</a>
+                <div class="dropdown-torturi dropdown-content">
+                    <a href="#">Aniversare</a>
+                    <a href="#">Botez</a>
+                    <a href="#">Majorate</a>
+                    <a href="#">Diverse</a>
+                </div>
+            </li>
+            <li class="nunta dropdown-menu">
+                <a class="menu-item" href="/nunta">Pachet nunta</a>
+                <div class="dropdown-nunta dropdown-content">
+                    <a href="#">Torturi nunta</a>
+                    <a href="#">Candybar</a>
+                    <a href="#">Marturii</a>
+                </div>
+            </li>
+
+            <li class="prajituri dropdown-menu">
+                <a class="menu-item" href="/prajituri">Prajituri</a>
+                <div class="dropdown-prajituri dropdown-content">
+                    <a href="#">La tava</a>
+                    <a href="#">Asortate</a>
+                    <a href="#">Prajiturile copilariei</a>
+                    <a href="#">Fursecuri</a>
+                </div>
+            </li>
+
+            <li><a class="menu-item" href="/comenzi">Comenzi</a></li>
+            <li><a class="menu-item" href="/contact">Contact</a></li>
+            <li><a href="#" class="social-btns fa fa-facebook"></a></li>
+            <li><a href="#" class="social-btns fa fa-instagram"></a></li>
+            <li><a href="#" class="social-btns fa fa-map-marker"></a></li>
+            
+        </ul>
+        
     </ul>
 </nav>

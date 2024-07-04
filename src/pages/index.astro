@@ -1,26 +1,14 @@
 ---
-import Navigation from "../components/Navigation.astro"
-import '../styles/styles.css';
+import BaseLayout from "../components/BaseLayout.astro";
+import Slideshow from "../components/Slideshow.astro";
 ---
+<BaseLayout>
+	<Slideshow/>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/src/images/simbol_tab.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<title>Ruth's Cake</title>
-	</head>
-	<body>
-		
-
-		<header>
-			<Navigation/>
-		</header>
-
-
-	</body>
-</html>
+		<!-- The dots/circles -->
+        <div class="slideshow-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+</BaseLayout>

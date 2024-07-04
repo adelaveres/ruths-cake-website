@@ -1,4 +1,22 @@
-nav ul{
+header{
+    position: relative;
+    top: -60px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+nav{
+    
+    position: relative;
+    height: 180px;
+}
+.initial-menu-list{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     /* top: 5rem;
     left: 48px; */
@@ -8,37 +26,107 @@ nav ul{
     padding: 0;
     
 }
+.menu-items-list{
+    list-style: none;
+    padding-bottom: 40px;
+}
 
-nav ul li{
+.menu-items-list li{
     display: inline-block;
     padding-left: 0px;
     padding-top:  15px;
     padding-bottom: 15px;
     padding-right: 20px;
 }
+.menu-items-list li:last-child{
+    padding-right: 0;
+}
 
-
-
-nav ul li a{
+ /* anchor element */
+.menu-item{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    /* font-weight: <weight>; */
+    font-weight: 500;
     font-style: normal;
     font-size: 1.1em;
     color: pink;
+    text-decoration: none;
+}
+.menu-item:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* text-decoration-color: grey; */
+}
+.social-btns{
+    text-decoration: none;
+    font-weight: 700;
+    color: #584e51;
+}
+.social-btns:hover{
+    color: pink;
 }
 
-
 .logo {
+    /* background-color: pink; */
     background-image: url('../images/ruths_cake_logo_lateral.png');
-    background-size: 400px;
-    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
     background-position: center;
     display: inline-block;
     width: 400px;
-    height: 220px;
+    height: 160px;
     text-indent: -9999999px;
     position: relative;
-    top: -55px;
+    top: 0px;
 }
+
+
+/* DROPDOWN-MENUS */
+
+.dropdown-menu{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f5f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5%;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    color: #584e51;
+    padding: 12px 16px;
+
+}
+/*  */
+.torturi:hover .dropdown-torturi{
+    display: block;
+}
+.dropdown-torturi a:hover{
+    color: pink;
+    background-color: #ddd;
+}
+.nunta:hover .dropdown-nunta{
+    display: block;
+}
+.dropdown-nunta a:hover{
+    color: pink;
+    background-color: #ddd;
+}
+.prajituri:hover .dropdown-prajituri{
+    display: block;
+}
+.dropdown-prajituri a:hover{
+    color: pink;
+    background-color: #ddd;
+}
+
+
+
 

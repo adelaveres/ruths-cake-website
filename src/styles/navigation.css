@@ -28,8 +28,8 @@ nav{
 }
 .menu-items-list{
     list-style: none;
-    padding-bottom: 40px;
-    padding-left: 70px;
+    padding-bottom: 0px;
+    padding-left: 100px;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -56,18 +56,33 @@ nav{
 }
 .menu-item:active{
     color: #584e51;
+
 }
-.li-social-btns{
+.menu-social-btns{
+    position:relative;
+    width: 120px;
+    margin-left:30px;
+}
+
+.menu-social-btns ul{
+    padding:0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.li-social-btn{
     position:relative;
     height: 30px;
     width: 30px;
     text-align: center;
     background-color: #d8e2dc;
     border-radius: 50%;
+    
 }
-.social-btns{
+.social-btn{
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 550;
     color: #584e51;
     font-size: 1.15em;
     display: inline-block;
@@ -76,21 +91,19 @@ nav{
     position: relative;
     top: 5px;
 }
-.social-btns:hover{
+.social-btn:hover{
     color: pink;
-    
-
 }
 
 .logo {
     /* background-color: pink; */
-    background-image: url('../images/ruths_cake_logo_lateral.png');
+    background-image: url('../images/ruths_cake_logo_lateral_MARE3.png');
     background-size: 100%;
     /* background-repeat: no-repeat; */
     background-position: center;
     display: inline-block;
-    width: 400px;
-    height: 160px;
+    width: 440px;
+    height: 110px;
     text-indent: -9999999px;
     position: relative;
     top: 0px;

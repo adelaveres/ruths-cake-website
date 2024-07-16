@@ -97,7 +97,7 @@ nav{
 
 .logo {
     /* background-color: pink; */
-    background-image: url('../images/ruths_cake_logo_lateral_MARE3.png');
+    background-image: url('../../public/images/ruths_cake_logo_lateral_MARE3.PNG');
     background-size: 100%;
     /* background-repeat: no-repeat; */
     background-position: center;

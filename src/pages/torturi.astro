@@ -1,6 +1,33 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
 import "../styles/torturi.css";
+const photoSources_aniversare = [
+    "20231014_130153", "20231021_101121", "20231023_115219",
+    "20231024_170129", "20231112_140037", "20231118_143645",
+    "20231209_134055", "20231230_121621", "20231230_175004",
+    "20231231_193247", "20240120_134350", "20240128_123218",
+    "20240216_062938", "20240317_082630", "20240323_101447",
+    "20240327_220934", "20240330_101640", "20240330_144659",
+    "20240402_104002", "20240406_120737", "20240406_122213", 
+    "20240406_193404", "20240413_132843", "tort_gradinita",
+    "20231028_221923"
+];
+
+const photoSources_botez =[
+    "20231006_161938", "20240103_165102", "IMG_20230305_152116"
+];
+
+const photoSources_majorat =[
+    "20230923_183747"
+];
+
+const photoSources_caserola=[
+    "IMG_20230307_145628", "IMG_20230307_145912", "IMG_20230307_150318",
+    "IMG_20230307_150708", "IMG_20230307_150804", "IMG_20230307_150818",
+    "IMG_20230307_150841", "IMG_20230307_150914", "IMG_20230307_151901",
+    "IMG_20230307_151949", "IMG_20230307_152345"
+];
+
 ---
 <BaseLayout>
 	<main>
@@ -18,7 +45,7 @@ import "../styles/torturi.css";
             </div>
 
             <div class="sidebar-item-box">
-                <a href="#diverse">Diverse</a>
+                <a href="#caserola">Tort Caserola</a>
             </div>
 
         </div>
@@ -33,22 +60,14 @@ import "../styles/torturi.css";
 
             <div class="torturi-aniversare">
                 
+                { 
+                photoSources_aniversare.map( (photoSource) => (
+                    <div class="img-wrapper">
+                        <img  src={`src/images/torturi/zile_nastere/${photoSource}.jpg`} alt="Little Cake">
+                    </div>
+                     ))
+                }
 
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
             </div>
 
            
@@ -59,19 +78,13 @@ import "../styles/torturi.css";
             </div>
 
             <div class="torturi-botez">
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-    
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
+                { 
+                photoSources_botez.map( (photoSource) => (
+                    <div class="img-wrapper">
+                        <img  src={`src/images/torturi/botez/${photoSource}.jpg`} alt="Little Cake">
+                    </div>
+                     ))
+                }
 
             </div>
 
@@ -82,48 +95,34 @@ import "../styles/torturi.css";
             </div>
 
             <div class="torturi-majorate">
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
+                
+                { 
+                photoSources_majorat.map( (photoSource) => (
+                    <div class="img-wrapper">
+                        <img  src={`src/images/torturi/majorate/${photoSource}.jpg`} alt="Little Cake">
+                    </div>
+                     ))
+                }
             </div>
           
-            <div id="diverse" class="breakline">
+            <div id="caserola" class="breakline">
                 <img src="/src/images/line_heart_left.png" alt="">
-                <span>Diverse</span>
+                <span>Tort Caserola</span>
                 <img src="/src/images/line_heart_right.png" alt="">
             </div>
 
-            <div  class="torturi-diverse">
+            <div  class="torturi-caserola">
+                { 
+                photoSources_caserola.map( (photoSource) => (
+                    <div class="img-wrapper">
+                        <img  src={`src/images/torturi/caserola/${photoSource}.jpg`} alt="Little Cake">
+                    </div>
+                     ))
+                }
+{/* 
                 <div class="img-wrapper">
                     <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
-                <div class="img-wrapper">
-                    <img src="/src/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div>
+                </div> */}
 
             </div>
 

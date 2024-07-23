@@ -4,8 +4,8 @@
     height: 600px;
     position: relative;
     margin: auto;
-    top: -65px;
-
+    top: -80px;
+    overflow: hidden; 
 }
 
 /* Hide the images by default */
@@ -96,3 +96,15 @@
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  /* Zooming in */
+
+.zoom-in{
+    animation-name: zoom;
+    animation-duration: 6s;
+    
+}
+@keyframes zoom {
+    from {scale: 1;}
+    to {scale: 1.15;}
+}

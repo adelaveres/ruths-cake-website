@@ -26,29 +26,32 @@
     object-fit: contain;
 }
 /* Next & previous buttons */
-.prevBtn, .nextBtn {
+#prevBtn, #nextBtn {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: #d8e2dc;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
 
 /* Position the "next button" to the right */
-.nextBtn{
+#nextBtn{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
-.prevBtn:hover, .nextBtn:hover {
-    background-color: rgba(0,0,0,0.8);
+#prevBtn:hover, #nextBtn:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+    background-color: #d8e2dc;
+    opacity: 0.9;
+    color: pink;
 }
 
 /* Caption text */
@@ -75,7 +78,7 @@
     width: 15px;
     background-color: #bbb;
     border-radius: 50%;
-    margin: 0 2px;
+    margin: 0 4px;
     display: inline-block;
     transition: background-color 0.6s ease;
 }

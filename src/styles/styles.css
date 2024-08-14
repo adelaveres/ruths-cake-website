@@ -4,16 +4,10 @@
 
 html {
     background-color: #f1f5f9;
-
-    font-family: "Hind Madurai", sans-serif;
-    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 330;
     font-style: normal;
-
-    /* LORA FONT - for headings etc */
-    /* font-family: "Lora", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal; */
   }
   
 
@@ -23,4 +17,5 @@ html {
     max-width: 97%;
     padding: 20px;
     line-height: 1.5;
+    
   }

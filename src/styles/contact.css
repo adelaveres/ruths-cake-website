@@ -13,6 +13,18 @@ main{
     max-width: 90%;
 }
 .contact-info{
-    color: #584e51;
+    color: #3f383a;
     min-width: 250px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 330;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 1.2em;
+}
+h2{
+    font-family: "Cardo", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3em;
 }

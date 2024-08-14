@@ -6,7 +6,7 @@ main{
     max-width: 95%;
     width: 93%;
     margin: 0 auto;
-    height: 600px;
+    height: 680px;
 }
 .sidebar-menu{
     width: 25%;
@@ -17,14 +17,16 @@ main{
 .sidebar-item-box{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     min-width: 280px;
+    max-height: 120px;
     text-align: center;
     border-radius: 10px;
 }
 .sidebar-item-box:hover{
-    background-color: #d8e2dc;
+    color: rgb(244, 111, 133);
 }
 .sidebar-item-box:hover a{
-    color: rgb(252, 163, 178);
+    color: rgb(244, 111, 133);
+    box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
     /* color: #f4acb7; */
 }
 
@@ -34,11 +36,12 @@ main{
     /* text-transform: uppercase; */
     
     color: #584e51;
-    font-family: "Lora", serif;
-    font-size: 1.35em;
+    font-family: "Cardo", serif;
+    font-size: 1.4em;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
+    
 
     display: inline-block;
     width: 100%;
@@ -51,6 +54,7 @@ main{
     padding-left: 30px;
     position: relative;
     top: -20px;
+    height: 100%;
 }
 .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
     display:flex;
@@ -78,10 +82,10 @@ main{
     display: flex;
     justify-content: center;
     color: #584e51;
-    font-family: "LXGW WenKai TC", cursive;
-    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 330;
+    font-size: 1.6em;
     font-style: normal;
-    font-size: 1.4em;
     margin: 30px;
 }
 

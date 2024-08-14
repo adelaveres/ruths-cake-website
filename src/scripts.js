@@ -72,17 +72,3 @@ function showSlides() {
 //   setTimeout(showSlides, 4500); // Change image every 5 seconds
 // }
 
-
-
-
-// var openFile = function() {
-//   const file =  "/src/images/torturi/zile_nastere/20231014_130153.jpg";
-//   let input = file.target;
-//   let reader = new FileReader();
-//   reader.onload = function(){
-//     let dataURL = reader.result;
-//     let output = document.getElementById('output-cake-img');
-//     output.src = dataURL;
-//   };
-//   reader.readAsDataURL(input.files[0]);
-// };

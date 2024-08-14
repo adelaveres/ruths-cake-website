@@ -1,0 +1,15 @@
+main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -60px;
+    max-width: 95%;
+    width: 93%;
+    margin: 0 auto;
+    height: 680px;
+}
+
+.img-wrapper{
+    height: 40px;
+}
+

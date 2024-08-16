@@ -1,29 +1,36 @@
 main{
     position: relative;
-    top: -80px;
+    top: -100px;
     max-width: 95%;
     width: 93%;
     margin: 0 auto;
     height: 680px;
 
 }
-.images-wrapper{
+#cards-wrapper{
+    height:inherit;
     display:flex;
     overflow: hidden; 
+    justify-content: space-around;
+}
+
+.card{
+    height:inherit;
+    display:flex;
+    justify-content: space-between;
 }
 
 .img-wrapper{
-    margin: 0 30px;
-    /* margin-bottom: 15px; */
-    width: 450px;
-    height: 450px;
+    margin: 5px;
+    width: 400px;
+    height: 550px;
     padding: 30px;
     position: relative;
     cursor: pointer;
 }
 .img-wrapper img{
     /* margin: 30px; */
-    border-radius: 50%;
+    border-radius: 10px;
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -31,18 +38,17 @@ main{
     box-shadow: 0px 0px 10px grey;
 }
 
-.img-wrapper:hover img{
+.hover-effect:hover img{
     opacity: 0.4;
     transform: scale(1.07);
 }
 
-.img-wrapper:hover span{
+.hover-effect:hover span{
     color: #584e51;
 }
 
 .img-wrapper span{
     position: absolute;
-    /* color: white; */
     top: 220px;
     left: 85px;
     color: white;
@@ -50,15 +56,14 @@ main{
     font-weight: 600;
 }
 
-.candybar span{
+
+.candybar-card span{
     left: 140px;
 }
 
-.marturii span{
+.marturii-card span{
     left: 155px;
 }
-
-
 
 .breakline{
     display: flex;
@@ -68,8 +73,8 @@ main{
     font-weight: 330;
     font-size: 1.6em;
     font-style: normal;
-    margin: 0px auto;
-    margin-bottom: 50px;
+    margin: 25px 30px;
+    margin-bottom: 20px;
 }
 .breakline span{
     padding: 0 15px;
@@ -80,26 +85,3 @@ main{
     height: 25px;
 }
 
-
-
-
-/* 
-
-.zoom-in{
-    animation-name: zoom;
-    animation-duration: 3s;
-}
-@keyframes zoom{
-    from {scale: 1;}
-    to {scale: 1.1;}
-}
-.whiten{
-    animation-name: whiten;
-    animation-duration: 3s;
-}
-
-@keyframes whiten
-{
-    from {opacity: inherit;}
-    to {opacity: 0.3;}
-} */

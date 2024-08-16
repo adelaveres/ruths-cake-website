@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../components/BaseLayout.astro";
+import WeddingCakeSlideshow from "../components/WeddingCakeSlideshow.astro";
+import "../styles/torturi_nunta.css";
+
+---
+<BaseLayout>
+	
+	<main>
+			
+        <div class="section wed-cakes-slideshow">
+            <WeddingCakeSlideshow/>
+            <div class="wed-cakes-slideshow-dots">
+                <span class="wed-cake-dot" ></span>
+                <span class="wed-cake-dot" ></span>
+                <span class="wed-cake-dot" ></span>
+                <span class="wed-cake-dot" ></span>
+                <span class="wed-cake-dot" ></span>
+            </div>
+        </div>
+
+        <div id="torturi-nunta-info" class="section">
+            <div class="breakline">
+                <img src="/images/line_heart_left.PNG" alt="">
+                <span>Torturi de nuntă</span>
+                <img src="/images/line_heart_right.PNG" alt="">
+            </div>
+            <p>Torturile noastre va stau la dispozitie.......</p>
+            <p>..............</p>
+            <p>..............</p>
+
+            <div id="back-button">
+                <a href="/nunta">Inapoi</a>
+            </div>
+
+        </div>
+
+		
+		
+
+	</main>
+
+	<script src="../torturi_nunta_slideshow.js"></script>
+	
+
+</BaseLayout>

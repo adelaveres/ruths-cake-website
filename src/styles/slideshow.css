@@ -6,6 +6,7 @@
     margin: auto;
     top: -80px;
     overflow: hidden; 
+    border-radius: 10px;
 }
 
 /* Hide the images by default */
@@ -13,7 +14,6 @@
     display: none;
     height: 100%;
     width: 100%;
-
 }
 .slide-item img{
     max-width: 100%;

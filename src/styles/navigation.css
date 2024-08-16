@@ -52,6 +52,7 @@ nav{
 .menu-item{
     color: pink;
     text-decoration: none;
+    /* text-shadow: 0px 0px 8px rgba(179, 223, 196, 0.8); */
 }
 .menu-item:hover{
     color:  rgb(244, 111, 133);

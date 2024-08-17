@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
-import Slideshow from "../components/Slideshow.astro";
+import CandybarSlideshow from "../components/CandybarSlideshow.astro";
 import "../styles/candybar.css";
 ---
 <BaseLayout>
@@ -17,35 +17,20 @@ import "../styles/candybar.css";
 			<ul>
 				<li>Macarons</li>
 				<li>Tarte</li>
-				<li>Eclere</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>Eclere</li>	
 			</ul>
 
 		</div>
 		
 		<div class="candybar-photos">
 
-			<div class="candybar img-wrapper">
-				<img src="/public/images/nunta/candybar_hero_photo.jpg" alt="Candybar">
-			</div>
+			<CandybarSlideshow/>
 
 		</div>
 		
 
-	</main>
+		<script src="../candybar_slideshow.js"></script>
 
-	<script src="../nunta_scripts.js"></script>
+	</main>
 
 </BaseLayout>

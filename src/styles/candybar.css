@@ -1,11 +1,10 @@
 main{
     position: relative;
-    top: -90px;
+    top: -110px;
     max-width: 95%;
     width: 93%;
     margin: 0 auto;
     height: 680px;
-
     display: flex;
     justify-content: space-around;
 }
@@ -13,9 +12,9 @@ main{
 
 /* Candybar options table */
 .candybar-wrapper{
-    width: 700px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 10px;
+    width: 600px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    /* border-radius: 10px; */
 }
 
 .breakline{
@@ -37,17 +36,79 @@ main{
     height: 25px;
 }
 
-/* Candybar photo */
-.img-wrapper{
-    margin-left: 20px;
-    width: 600px;
-    height: 100%;
+/* Candybar slideshow */
 
+.slideshow-container{
+    max-width: 100%;
+    width: 650px;
+    height: 680px;
+    position: relative;
+    margin: 20px;
+    top: -20px;
+    overflow: hidden; 
+    border-radius: 10px;
+    background-color: #d8e2dc;;
 }
 
-.img-wrapper img{
-    border-radius: 10px;
+.slide-item-candybar{
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+}
+
+.slide-item-candybar img{
+    max-width: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#candybar-prevBtn, #candybar-nextBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f1f5f9;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#candybar-nextBtn{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#candybar-prevBtn:hover, #candybar-nextBtn:hover{
+    background-color: rgb(198, 198, 198);
+    opacity: 0.9;
+    color: pink;
+}
+
+
+ /* Fading animation */
+ .fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Zooming in */
+
+.zoom-in{
+    animation-name: zoom;
+    animation-duration: 6s;
+    
+}
+@keyframes zoom {
+    from {scale: 1;}
+    to {scale: 1.15;}
 }

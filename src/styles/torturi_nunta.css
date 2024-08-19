@@ -51,7 +51,6 @@ section{
     position: relative;
     margin: 20px;
     top: 0px;
-    overflow: hidden; 
     border-radius: 10px;
     /* background-color: #d8e2dc; */
 }

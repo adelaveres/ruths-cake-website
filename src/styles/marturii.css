@@ -1,0 +1,47 @@
+main{
+    position: relative;
+    top: -110px;
+    max-width: 95%;
+    width: 93%;
+    margin: 0 auto;
+    height: 680px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.marturii-wrapper{
+    width: 600px;
+}
+
+.breakline{
+    display: flex;
+    justify-content: center;
+    color: #584e51;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 330;
+    font-size: 1.6em;
+    font-style: normal;
+    margin: 30px auto;
+}
+.breakline span{
+    padding: 0 15px;
+    position: relative;
+    top:-5px;
+}
+.breakline img{
+    height: 25px;
+}
+
+.marturii-photos{
+    max-width: 100%;
+    width: 650px;
+    height: 680px;
+    position: relative;
+    margin: 20px;
+    top: -20px;
+    overflow: hidden; 
+    border-radius: 10px;
+    /* background-color: #d8e2dc; */
+}
+
+

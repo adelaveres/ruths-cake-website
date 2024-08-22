@@ -58,19 +58,20 @@ function showSlides() {
   
 }
 
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("slide-item");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {
-//     slideIndex = 1
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 4500); // Change image every 5 seconds
-// }
+// Hamburger Menu
 
+let hamburger = document.getElementById("hamburger");
+let overlay = document.getElementById("overlay-screen");
+let closeBtn = document.getElementById("closebtn");
 
+hamburger.addEventListener('click', openHambMenu); 
+closeBtn.addEventListener('click', closeHambMenu);
+
+function openHambMenu(){
+  overlay.style.display = 'block';
+}
+
+function closeHambMenu(){
+  overlay.style.display = 'none';
+}
 

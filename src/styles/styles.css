@@ -108,6 +108,10 @@ html {
       width: 300px;
       background-repeat: no-repeat;
     }
+
+    .slideshow-container{
+      top: -110px;
+    }
   }
 
   @media screen and (max-width: 510px){
@@ -145,3 +149,6 @@ html {
       background-repeat: no-repeat;
     }
   }
+
+
+

@@ -21,10 +21,9 @@ html {
   }
 
   .hamburger{
-    position: fixed;
-    top: 50px;
-    right: 80px;
-    padding-right: 20px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
     cursor: pointer;
     display: none;
   }
@@ -84,25 +83,12 @@ html {
     }
     .hamburger{
       display: block;
-      top: 50px;
-      right: 70px;
     }
   }
 
 
-
-  @media screen and (max-width: 1000px){
-    .hamburger{
-      top: 50px;
-      right: 60px;
-    }
-
-  }
   @media screen and (max-width: 800px){
-    .hamburger{
-      top: 50px;
-      right: 45px;
-    }
+
     .logo{
       width: 350px;
       background-repeat: no-repeat;
@@ -111,8 +97,7 @@ html {
 
   @media screen and (max-width: 600px){
     .hamburger{
-      top: 53px;
-      right: 40px;
+      top: 43px;
     }
     .hamburger .line{
       width: 35px;
@@ -126,10 +111,7 @@ html {
   }
 
   @media screen and (max-width: 510px){
-    .hamburger{
-      right: 30px;
-    }
-    
+   
     .logo{
       width: 250px;
       background-repeat: no-repeat;
@@ -137,9 +119,7 @@ html {
   }
 
   @media screen and (max-width: 420px){
-    .hamburger{
-      right: 25px;
-    }
+
     .hamburger .line{
       width: 30px;
       height: 3.6px;
@@ -152,9 +132,9 @@ html {
   }
 
   @media screen and (max-width: 380px){
-    .hamburger{
+    /* .hamburger{
       right: 25px;
-    }
+    } */
     .hamburger .line{
       width: 30px;
       height: 3.5px;

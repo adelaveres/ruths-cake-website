@@ -1,10 +1,10 @@
 main{
     position: relative;
-    top: -110px;
+    top: -80px;
     max-width: 95%;
     width: 93%;
     margin: 0 auto;
-    height: 560px;
+    height: 510px;
 
 }
 #cards-wrapper{
@@ -22,15 +22,15 @@ main{
 
 .img-wrapper{
     margin: 5px;
-    width: 400px;
-    height: 550px;
+    width: 450px;
+    height: 450px;
     padding: 30px;
     position: relative;
     cursor: pointer;
 }
 .img-wrapper img{
     /* margin: 30px; */
-    border-radius: 10px;
+    border-radius: 50%;
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -50,19 +50,19 @@ main{
 .img-wrapper span{
     position: absolute;
     top: 220px;
-    left: 85px;
+    left: 70px;
     color: white;
     font-size: 2.2em;
     font-weight: 600;
 }
 
 
-.candybar-card span{
-    left: 140px;
+#candybar-card span{
+    left: 120px;
 }
 
-.marturii-card span{
-    left: 155px;
+#marturii-card span{
+    left: 135px;
 }
 
 .breakline{

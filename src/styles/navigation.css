@@ -38,7 +38,7 @@ nav{
 .menu-items-list{
     list-style: none;
     padding-bottom: 0px;
-    padding-left: 100px;
+    padding-left: 230px;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -61,14 +61,10 @@ nav{
     color:rgb(244, 111, 133);
 }
 
-.menu-social-btns{
-    position:relative;
-    width: 120px;
-    margin-left:30px;
-}
-
 .menu-social-btns ul{
-    padding: 0px;
+    margin-left: 40px;
+    padding:0;
+    width: 120px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -81,7 +77,6 @@ nav{
     text-align: center;
     background-color: #d8e2dc;
     border-radius: 50%;
-    
 }
 .social-btn{
     text-decoration: none;

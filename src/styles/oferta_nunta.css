@@ -5,6 +5,7 @@ main{
     width: 93%;
     margin: 0 auto;
     height: 560px;
+    color: #584e51;
 
 }
 
@@ -16,20 +17,42 @@ main{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
     margin: 10px;
+    width: 450px;
 }
 
+section ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: center;
+}
 
 .breakline{
     display: flex;
     justify-content: center;
     color: #584e51;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 330;
-    font-size: 1.6em;
+    font-weight: 380;
+    font-size: 1.7em;
     font-style: normal;
     margin: 25px 30px;
     margin-bottom: 20px;
 }
+.breakline img{
+    height: 23px;
+}
+.breakline span{
+    padding: 0 10px;
+    position: relative;
+    top:-5px;
+}
+
 .option-title{
     padding: 0 15px;
     position: relative;
@@ -39,8 +62,8 @@ main{
     display: block;
     font-size: 0.7em;
     width:100%;
-    padding: 0 auto;
+    margin: 0 auto;
 }
-.breakline img{
-    height: 25px;
+.option1 span:nth-child(1){
+    padding-left: 25px;
 }

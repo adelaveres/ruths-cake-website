@@ -19,3 +19,149 @@ html {
     line-height: 1.5;
     
   }
+
+  .hamburger{
+    position: fixed;
+    top: 50px;
+    right: 80px;
+    padding-right: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .hamburger .line{
+    display: block;
+    width: 45px;
+    height: 5px;
+    margin-bottom: 7px;
+    background-color: #3f383a;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 1600px){
+    .menu-items-list{
+      padding-left: 150px;
+    }
+
+  }
+
+  @media screen and (max-width: 1500px){
+    .menu-items-list{
+      padding-left: 80px;
+
+    }
+    
+  }
+
+  @media screen and (max-width: 1400px){
+    .menu-social-btns{
+      display:none;
+    }
+    .menu-items-list{
+      padding-left: 150px;
+
+    }
+    
+  }
+
+  @media screen and (max-width: 1300px){
+    .menu-items-list{
+      padding-left: 80px;
+
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+    .menu-items-list{
+      padding-left: 50px;
+
+    }
+  }
+
+  @media screen and (max-width: 1160px){
+    .menu-items-list{
+      display: none;
+    }
+    .hamburger{
+      display: block;
+      top: 50px;
+      right: 70px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 1000px){
+    .hamburger{
+      top: 50px;
+      right: 60px;
+    }
+
+  }
+  @media screen and (max-width: 800px){
+    .hamburger{
+      top: 50px;
+      right: 45px;
+    }
+    .logo{
+      width: 350px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .hamburger{
+      top: 53px;
+      right: 40px;
+    }
+    .hamburger .line{
+      width: 35px;
+      height: 3.8px;
+      margin-bottom: 5px;
+    }
+    .logo{
+      width: 300px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 510px){
+    .hamburger{
+      right: 30px;
+    }
+    
+    .logo{
+      width: 250px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 420px){
+    .hamburger{
+      right: 25px;
+    }
+    .hamburger .line{
+      width: 30px;
+      height: 3.6px;
+      margin-bottom: 4.5px;
+    }
+    .logo{
+      width: 225px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 380px){
+    .hamburger{
+      right: 25px;
+    }
+    .hamburger .line{
+      width: 30px;
+      height: 3.5px;
+      margin-bottom: 4.5px;
+    }
+    .logo{
+      width: 220px;
+      background-repeat: no-repeat;
+    }
+  }

@@ -5,8 +5,7 @@ main{
     align-items: center;
     margin: 0 auto; 
     top: -100px;
-    max-width: 90%;
-    width: 95%;
+    width: 90%;
     height: 650px;
     background-color:  #d8e2dc;
     border-radius: 50%;
@@ -24,20 +23,16 @@ p{
     margin:10px;
 }
 .about-text{
-    /* display: inline-block; */
-    /* max-width: 50%; */
     text-align: center;
     line-height: 1.3;
     position: relative;
     top: 15px;
-
     color: #3f383a;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 330;
     font-style: normal;
     font-optical-sizing: auto;
     font-size: 1.2em;
-
 }
 .about-text i {
     color: #64a27d;
@@ -50,6 +45,17 @@ p{
     margin-right: 15px;
     
 }
+.sm-screen-img{
+    display: none;
+}
+.smallest-screen-img{
+    display: none;
+}
+.the-smallest-screen-img{
+    display: none;
+}
+
+
 .breakline{
     display: flex;
     justify-content: center;
@@ -69,3 +75,91 @@ p{
 .breakline img{
     height: 25px;
 }
+
+@media screen and (max-width: 1200px){
+    main{
+        border-radius: 10px;
+        height: auto;
+        padding: 30px;
+    } 
+    .adina-img{
+        height: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 860px){
+    .adina-img{
+        display: none;
+        height: 180px;
+    }
+    .sm-screen-img{
+        display: block;
+    }
+  }
+  @media screen and (max-width: 750px){
+    .first-part{
+        display:block;
+    }
+    .sm-screen-img{
+        display: none;
+    }
+
+    .smallest-screen-img{
+        display: block;
+        height: 150px;
+    }
+    .sm-screen-first-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 610px){
+    .first-line{
+        padding-left: 40px;
+    }
+    .smallest-screen-img{
+        height: 120px;
+    }
+  }
+  @media screen and (max-width: 554px){
+    .first-line{
+        padding-left: 10px;
+    }
+  }
+  @media screen and (max-width: 510px){
+    .first-line{
+        padding-left: 0px;
+    }
+    .smallest-screen-img{
+        height: 100px;
+    }
+    .breakline img{
+        height: 20px;
+    }
+    .about-text{
+        font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 445px){
+    main{
+        padding: 10px;
+    }
+    .smallest-screen-img{
+        display: none;
+    }
+    .the-smallest-screen-img{
+        display: block;
+        height: 100px;
+    }
+    .the-smallest-screen-first-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+  }

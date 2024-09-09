@@ -1,21 +1,21 @@
 main{
     position: relative;
     top: -110px;
-    max-width: 95%;
-    width: 93%;
+    /* max-width: 95%; */
+    width: 95%;
     margin: 0 auto;
     height: 680px;
     display: flex;
     justify-content: space-around;
 }
 
-
-/* Candybar options table */
-.candybar-wrapper{
-    width: 600px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    /* border-radius: 10px; */
+section{
+    height:inherit;
+    padding: 0px 20px;
+    border-radius: 10px;
+    /* top: -50px; */
 }
+
 
 .breakline{
     display: flex;
@@ -111,4 +111,113 @@ main{
 @keyframes zoom {
     from {scale: 1;}
     to {scale: 1.15;}
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 1340px){
+    .section{
+        padding: 0px 20px;
+    }
+    .breakline{
+        font-size: 1.4em;
+    }
+    .breakline img{
+        height: 18px;
+    }
+    .breakline{
+        margin: 25px 10px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 1320px){
+    .slideshow-container{
+        width: 500px;
+        height: 600px;
+    }
+    main{
+        top: -110px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .slideshow-container{
+        width: 450px;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1155px){
+    
+    .breakline span{
+        padding: 0 13px;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .breakline{
+        margin: 20px 7px;
+        margin-bottom: 20px;
+    }
+    .breakline span{
+        padding: 0 10px;
+    }
+    .breakline img{
+        height: 16px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .breakline{
+        margin: 20px;
+    }
+    .breakline span{
+        text-align: center;
+        top: -10px;
+        line-height: 1.2;
+    }
+}
+@media screen and (max-width: 1025px){
+    .breakline{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .breakline span{
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 995px){
+    main{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .slideshow-container{
+        max-width: 100%;
+        width: auto;
+        height: 500px;
+    }   
+    .candybar-info{
+        padding: 50px;
+        padding-top: 20px;
+    
+    }
+    .breakline span{
+        top: -5px;
+    }
+}
+@media screen and (max-width: 500px){
+    .candybar-photos{
+        margin: 0px;
+        padding: 0px;
+    }
+    .slideshow-container{
+        margin: 0px;
+        padding: 0 px;
+        height: 400px;
+    }
+    .candybar-info{
+        padding: 10px;
+        padding-bottom: 20px;
+    }
 }

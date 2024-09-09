@@ -61,6 +61,7 @@ main{
 .prajituri-tava, .prajituri-asortate, .prajiturile-copilariei, .fursecuri{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 60px;
 }
 
@@ -108,7 +109,6 @@ main{
 
 
 /* Responsiveness */
-
 
 @media screen and (max-width: 1385px){
 
@@ -182,7 +182,6 @@ main{
     }
   }
 
-
   @media screen and (max-width: 640px){
     .img-wrapper{
         width: 180px;
@@ -195,19 +194,23 @@ main{
         width: 150px;
         height: 150px;
     }
-    
-  }
-  @media screen and (max-width: 550px){
+    .breakline img{
+        height: 18px;
+    }
     .breakline{
         font-size: 1.3em;
         margin: 20px;
     }
-    .breakline img{
-        height: 18px;
+    main{
+        width: 100%;
+    }
+    .cakes-grid{
+        padding-left: 0px;
+        width: 100%;
     }
   }
 
-  @media screen and (max-width: 530px){
+  @media screen and (max-width: 500px){
     .img-wrapper{
         width: 110px;
         height: 110px;
@@ -220,16 +223,9 @@ main{
         font-size: 1.2em;
         margin: 20px;
     }
-    main{
-        width: 100%;
-    }
-    .cakes-grid{
-        padding-left: 0px;
-        width: 100%;
-    }
   }
 
-  @media screen and (max-width: 465px){
+  @media screen and (max-width: 445px){
 
     .img-wrapper{
         width: 100px;
@@ -237,7 +233,7 @@ main{
     }
   }
 
-  @media screen and (max-width: 435px){
+  @media screen and (max-width: 415px){
     .img-wrapper{
         width: 130px;
         height: 130px;

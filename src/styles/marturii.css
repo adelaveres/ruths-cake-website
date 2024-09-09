@@ -76,19 +76,14 @@ section{
 }
 @media screen and (max-width: 1320px){
     .marturii-photos{
-        width: 500px;
-        height: 600px;
+        width: 600px;
+        height: auto;
     }
     main{
-        top: -100px;
+        top: -90px;
     }
 }
-/* @media screen and (max-width: 1200px){
-    .marturii-photos{
-        width: 450px;
-        height: 600px;
-    }
-} */
+
 @media screen and (max-width: 1155px){
     
     .breakline span{
@@ -96,10 +91,9 @@ section{
     }
 }
 
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1180px){
     .marturii-photos{
-        width: 450px;
-        height: 600px;
+        width: 550px;
     }
     .breakline{
         margin: 20px 7px;
@@ -139,9 +133,7 @@ section{
         height: auto;
     }
     .marturii-photos{
-        max-width: 100%;
-        width: auto;
-        height: 500px;
+        margin: 0 auto;
     }   
     .marturii-info{
         padding: 50px;
@@ -153,11 +145,7 @@ section{
     }
 }
 @media screen and (max-width: 500px){
-    .marturii-photos{
-        margin: 0px;
-        padding: 0 px;
-        height: 400px;
-    }
+   
     .marturii-info{
         padding: 10px;
         padding-bottom: 20px;

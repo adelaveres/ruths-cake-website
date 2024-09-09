@@ -105,3 +105,149 @@ main{
 .breakline img{
     height: 25px;
 }
+
+
+/* Responsiveness */
+
+
+@media screen and (max-width: 1385px){
+
+    .img-wrapper{
+        width: 225px;
+        height: 225px;
+    }
+  }
+
+  @media screen and (max-width: 1300px){
+    .img-wrapper{
+        width: 210px;
+        height: 210px;
+    }
+  }
+
+  @media screen and (max-width: 1190px){
+
+    .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
+        justify-content: center;
+    }
+    .img-wrapper{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+  }
+
+  @media screen and (max-width: 1005px){
+    .sidebar-menu{
+        display: none;
+    }
+    .img-wrapper{
+        margin: 20px;
+    }
+  }
+  @media screen and (max-width: 950px){
+
+    .img-wrapper{
+        width: 200px;
+        height: 200px;
+    }
+  }
+  @media screen and (max-width: 910px){
+
+   
+  }
+
+  @media screen and (max-width: 870px){
+    main{
+        width: 100%;
+        /* background-color: pink; */
+    }
+    
+   
+  }
+
+  @media screen and (max-width: 835px){
+    .img-wrapper{
+        width: 180px;
+        height: 180px;
+    }
+  }
+
+  @media screen and (max-width: 750px){
+    .img-wrapper{
+        width: 200px;
+        height: 200px;
+    }
+    .img-wrapper{
+        margin: 30px;
+    }
+  }
+
+
+  @media screen and (max-width: 640px){
+    .img-wrapper{
+        width: 180px;
+        height: 180px;
+    }
+  }
+
+  @media screen and (max-width: 595px){
+    .img-wrapper{
+        width: 150px;
+        height: 150px;
+    }
+    
+  }
+  @media screen and (max-width: 550px){
+    .breakline{
+        font-size: 1.3em;
+        margin: 20px;
+    }
+    .breakline img{
+        height: 18px;
+    }
+  }
+
+  @media screen and (max-width: 530px){
+    .img-wrapper{
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+    }
+    .breakline img{
+        height: 15px;
+    }
+    .breakline{
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    main{
+        width: 100%;
+    }
+    .cakes-grid{
+        padding-left: 0px;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 465px){
+
+    .img-wrapper{
+        width: 100px;
+        height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 435px){
+    .img-wrapper{
+        width: 130px;
+        height: 130px;
+        margin: 15px;
+    }
+  }
+  @media screen and (max-width: 390px){
+    .img-wrapper{
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
+  }

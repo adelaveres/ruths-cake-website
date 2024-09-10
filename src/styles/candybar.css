@@ -35,6 +35,12 @@ section{
 .breakline img{
     height: 25px;
 }
+.candybar-info{
+    overflow-y: scroll;
+}
+.candybar-info p{
+    text-indent: 20px;
+}
 
 /* Candybar slideshow */
 

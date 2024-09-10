@@ -1,8 +1,8 @@
 main{
     position: relative;
     top: -110px;
-    max-width: 95%;
-    width: 93%;
+    /* max-width: 95%; */
+    width: 95%;
     margin: 0 auto;
     height: 680px;
     display: flex;

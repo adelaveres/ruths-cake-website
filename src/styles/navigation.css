@@ -121,7 +121,7 @@ nav{
     background-color: #f1f5f9;
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 5%;
+    border-radius: 10px;
     z-index: 1;
 }
 
@@ -142,6 +142,7 @@ nav{
 .dropdown-torturi a:hover{
     color: rgb(244, 111, 133);
     box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
+    border-radius: 10px;
 }
 /* .dropdown-torturi a:hover .menu-item{
     color:  rgb(244, 111, 133);
@@ -153,6 +154,7 @@ nav{
 .dropdown-nunta a:hover{
     color: rgb(244, 111, 133);
     box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
+    border-radius: 10px;
 }
 .prajituri:hover .dropdown-prajituri{
     display: block;
@@ -161,6 +163,7 @@ nav{
 .dropdown-prajituri a:hover{
     color: rgb(244, 111, 133);
     box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
+    border-radius: 10px;
 }
 
 .overlay{

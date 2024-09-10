@@ -1,23 +1,29 @@
 main{
     position: relative;
     top: -110px;
-    max-width: 95%;
-    width: 93%;
+    /* max-width: 95%; */
+    width: 95%;
     margin: 0 auto;
-    height: 560px;
+    height: 580px;
     color: #584e51;
 
 }
 
 .cards-wrapper{
+    margin:0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    height: inherit;
 }
 .card{
+    width: 450px;
+    min-width: 450px;
+    height: 550px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
     margin: 10px;
-    width: 450px;
 }
 
 section ul{
@@ -38,7 +44,7 @@ p{
     justify-content: center;
     color: #584e51;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 380;
+    font-weight: 450;
     font-size: 1.7em;
     font-style: normal;
     margin: 25px 30px;
@@ -64,6 +70,302 @@ p{
     width:100%;
     margin: 0 auto;
 }
-.option1 span:nth-child(1){
+#option1 span:nth-child(1){
     padding-left: 25px;
+}
+
+.info-offers{
+    text-align: center;
+}
+
+
+/* Next & previous buttons */
+#prevBtn, #nextBtn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #584e51;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+#prevBtn{
+    left: 10px;
+}
+  /* Position the "next button" to the right */
+#nextBtn{
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+#prevBtn:hover, #nextBtn:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+    background-color: #d8e2dc;
+    opacity: 0.9;
+    color: pink;
+}
+
+
+@media screen and (max-width: 1545px){
+    
+    #option1,#option3{
+        background-color: #9c9c9c;
+    }
+    #option1{
+        position: absolute;
+        z-index: 1;
+        left: 5%;
+    }
+    #option3{
+        position: absolute;
+        z-index: 2;
+        right: 5%;
+    }
+    #option2{
+        position: absolute;
+        background-color: #f1f5f9;
+        z-index: 3;
+        left: 32.5%;
+    }
+    .card:hover{
+        box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1530px){
+    #option2{
+        left: 32.3%;
+    }
+
+}
+
+@media screen and (max-width: 1500px){
+    #option2{
+        left: 32.1%;
+    }
+
+}
+
+@media screen and (max-width: 1470px){
+    #option2{
+        left: 32%;
+    }
+
+}
+
+@media screen and (max-width: 1445px){
+    #option2{
+        left: 31.5%;
+    }
+
+}
+@media screen and (max-width: 1430px){
+    #option2{
+        left: 31%;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    #option2{
+        left: 30.5%;
+    }
+
+}
+@media screen and (max-width: 1340px){
+    #option2{
+        left: 29.5%;
+    }
+
+}
+@media screen and (max-width: 1320px){
+    #option2{
+        left: 29%;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    #option2{
+        left: 28%;
+    }
+
+}
+@media screen and (max-width: 1160px){
+    #option2{
+        left: 26%;
+    }
+
+}
+
+@media screen and (max-width: 1080px){
+    #option2{
+        left: 25%;
+    }
+
+}
+
+@media screen and (max-width: 1020px){
+    .cards-wrapper{
+        width: 660px;
+        margin: 0 auto;
+    }
+    main{
+        top: -100px;
+    }
+
+    #option1{
+        left: 0px;
+    }
+    #option2{
+        left: 100px;
+    }
+    #option3{
+        right: 0px;
+    }
+}
+@media screen and (max-width: 760px){
+    .card{
+        width: 350px;
+        min-width: 350px;
+    }
+    .cards-wrapper{
+        width: 530px;
+        margin: 0 auto;
+    }
+    section ul{
+        font-size: 1.2em;
+    }
+    .breakline{
+        font-size: 1.5em;
+        
+    }
+    .breakline img{
+        height: 18px;
+    }
+    .breakline span{
+        padding: 0 5px;
+        top:-5px;
+    }
+    #option2{
+        left: 85px;
+    }
+    #prevBtn, #nextBtn {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 620px){
+    main{
+        width: 98%;
+    }
+    .card{
+        width: 300px;
+        min-width: 300px;
+        height: 500px;
+    }
+    .cards-wrapper{
+        height: 520px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    section ul{
+        font-size: 1.1em;
+    }
+    .breakline{
+        font-size: 1.35em;
+        
+    }
+    .breakline img{
+        height: 15px;
+    }
+    .breakline span{
+        padding: 0 2px;
+        top:-5px;
+    }
+    #option2{
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .card{
+        width: 260px;
+        min-width: 260px;
+        height: 470px;
+    }
+    .cards-wrapper{
+        width: 360px;
+        margin: 0 auto;
+    }
+    section ul{
+        font-size: 1em;
+    }
+    .breakline{
+        font-size: 1.3em;
+        
+    }
+    .breakline img{
+        height: 12px;
+    }
+    .breakline span{
+        padding: 0 1px;
+        top:-5px;
+    }
+    section p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 420px){
+    body{
+        width: 99%;
+        padding: 0;
+    }
+    main{
+        width: 100%;
+    }
+    .card{
+        width: 245px;
+        min-width: 245px;
+        height: 470px;
+    }
+    .cards-wrapper{
+        width: 350px;
+        margin: 0 auto;
+    }
+    section ul{
+        font-size: 1em;
+    }
+    .breakline{
+        font-size: 1.3em;
+        
+    }
+    .breakline img{
+        height: 11.5px;
+    }
+    .breakline span{
+        padding: 0px;
+        top:-5px;
+    }
+    section p{
+        font-size: 0.8em;
+    }
+    #option2{
+        left: 43px;
+    }
+    .info-offers{
+        padding: 10px;
+    }
 }

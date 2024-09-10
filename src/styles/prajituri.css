@@ -63,25 +63,32 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 60px;
+ 
 }
 
 .img-wrapper{
+    position: relative;
     margin: 0 30px;
     margin-bottom: 15px;
     width: 250px;
     height: 250px;
 }
-
 .img-wrapper img{
     border-radius: 50%;
     max-width: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.3;
 }
 
-/* .cakes-grid img{
-    height: 250px;  
+/* .img-wrapper span{
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    color: #827f80;
+    font-size: 1.5em;
+    font-weight: 500;
 } */
 
 .breakline{
@@ -106,6 +113,7 @@ main{
 .breakline img{
     height: 25px;
 }
+
 
 
 /* Responsiveness */

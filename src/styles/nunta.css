@@ -55,7 +55,6 @@ main{
     font-weight: 600;
 }
 
-
 #candybar-card span{
     left: 120px;
 }
@@ -92,6 +91,7 @@ main{
     max-height: 120px;
     text-align: center;
     margin: 0 auto;
+    margin-top: 20px;
     background-color: #73db9d;
 }
 .offer-btn a{

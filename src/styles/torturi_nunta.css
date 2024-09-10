@@ -16,6 +16,19 @@ section{
     border-radius: 10px;
     /* top: -50px; */
 }
+#torturi-nunta-info{
+    color: #584e51;
+    overflow-y: auto;
+}
+#torturi-nunta-info p{
+    text-indent: 20px;
+}
+strong{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: normal;
+}
 
 .breakline{
     display: flex;
@@ -122,6 +135,8 @@ section{
     animation-name: fade;
     animation-duration: 4s;
 }
+
+
 
 @keyframes fade {
     from {opacity: .4}

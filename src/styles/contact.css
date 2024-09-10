@@ -3,14 +3,27 @@ main{
     display: flex;
     justify-content: space-between;
     top: -50px;
-    max-width: 90%;
-    width: 90%;
+    max-width: 95%;
+    width: 95%;
     margin: 0 auto;
     height: 600px;
 }
+.google-map{
+    margin-right: 30px;
+    width: 850px;
+    height: 500px;
 
+    background-image: url('/images/location_ruths_cake.PNG');
+    background-size: 100%;
+    background-position: center;
+
+}
 .google-map img{
-    max-width: 90%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 .contact-info{
     color: #3f383a;
@@ -27,4 +40,89 @@ h2{
     font-weight: 600;
     font-style: normal;
     font-size: 1.3em;
+}
+.social-btn{
+    display: inline;
+    text-decoration: none;
+    font-weight: 550;
+    /* color: #584e51; */
+    color: #3f383a;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 1px;
+}
+.social-btn:hover{
+    color: pink;
+}
+
+@media screen and (max-width: 1270px){
+    .google-map{
+        width: 750px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        display: block;
+    }
+    .google-map{
+        margin: 0 auto;
+    }
+    .contact-info{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 860px){
+    .google-map{
+        background-size: 130%;
+        width: 600px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 700px){
+    .google-map{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .google-map{
+        width: 450px;
+        height: 300px;
+        background-size: 150%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .google-map{
+        width: 400px;
+        height: 300px;
+        background-size: 180%;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .google-map{
+        width: 360px;
+        height: 300px;
+        background-size: 180%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    body{
+        width: 99%;
+    }
+    main{
+        width: 100%;
+    }
+    .google-map{
+        width: 300px;
+        height: 300px;
+        background-size: 240%;
+    }
 }

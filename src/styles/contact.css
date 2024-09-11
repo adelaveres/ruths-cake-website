@@ -1,7 +1,7 @@
 main{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     top: -50px;
     max-width: 95%;
     width: 95%;
@@ -9,10 +9,10 @@ main{
     height: 600px;
 }
 .google-map{
-    margin-right: 30px;
+    
     width: 850px;
     height: 500px;
-
+    margin-right: 20px;
     background-image: url('/images/location_ruths_cake.PNG');
     background-size: 100%;
     background-position: center;

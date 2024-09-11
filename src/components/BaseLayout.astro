@@ -1,6 +1,5 @@
 ---
 import Navigation from "../components/Navigation.astro"
-import '../styles/slideshow.css';
 import '../styles/styles.css';
 
 ---
@@ -11,7 +10,9 @@ import '../styles/styles.css';
 		<link rel="icon" type="image/svg+xml" href="/images/cake_photo_tab.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
 		<!-- imported fonts -->
+
 		<!-- Montserrat -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,21 +44,18 @@ import '../styles/styles.css';
 		<!-- font awesome  -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 		<title>Ruth's Cake</title>
 	</head>
 
 	<body>
-		
 
 		<header>
-			<Navigation/>
-			
+			<Navigation/>	
 		</header>
 
         <slot />
-
-
-		<script src="../scripts.js"></script>
+		
 	</body>
 
 </html>

@@ -55,7 +55,18 @@ main{
     padding-left: 30px;
     position: relative;
     top: -20px;
-    
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.coming-soon-msg{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 4em;
+    font-weight: 700;
+    color: rgba(0,0,0,0.4);
+    z-index: 1;
 }
 
 .prajituri-tava, .prajituri-asortate, .prajiturile-copilariei, .fursecuri{
@@ -158,6 +169,11 @@ main{
         width: 200px;
         height: 200px;
     }
+    .coming-soon-msg{
+        font-size: 3em;
+        left: 30%;
+    }
+
   }
   @media screen and (max-width: 910px){
 
@@ -216,6 +232,10 @@ main{
         padding-left: 0px;
         width: 100%;
     }
+    .coming-soon-msg{
+        font-size: 2em;
+        left: 30%;
+    }
   }
 
   @media screen and (max-width: 500px){
@@ -246,6 +266,16 @@ main{
         width: 130px;
         height: 130px;
         margin: 15px;
+    }
+    .coming-soon-msg{
+        font-size: 2em;
+        left: 20%;
+    }
+    main{
+        width: 100%;
+    }
+    body{
+        padding: 0;
     }
   }
   @media screen and (max-width: 390px){

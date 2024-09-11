@@ -53,7 +53,7 @@ function showSlide(n) {
 function showSlides() {
   slideIndex++;
   showSlide(slideIndex);
-  setTimeout(showSlides, 3800);
+  setTimeout(showSlides, 4000);
   
   
 }

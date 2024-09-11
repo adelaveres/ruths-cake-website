@@ -1,6 +1,6 @@
 main{
     position: relative;
-    top: -90px;
+    top: -80px;
     /* max-width: 95%; */
     width: 95%;
     margin: 0 auto;
@@ -26,10 +26,13 @@ section{
 }
 .marturii-info {
     padding: 10px;
+    margin-left: 20px;
 }
 .marturii-info p{
     text-indent: 20px;
+
 }
+
 
 
 .breakline{

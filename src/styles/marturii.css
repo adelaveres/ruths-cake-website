@@ -170,5 +170,19 @@ section{
         margin: 0;
     }
 }
+@media screen and (max-width: 520px){
+    main{
+        width:100%;
+    }
+    body{
+        width:100%;
+        padding: 0;
+    }
+    section{
+        padding: 0;
+    }
+    .marturii-photos{
+        width: auto;
+    }
 
-
+}

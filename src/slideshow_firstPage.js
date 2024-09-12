@@ -32,7 +32,7 @@ for (let i = 0; i < dots.length; i++){
 }
 
 function showSlide(n) {
-  let i;
+  let i; 
   //Hide all photos
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -45,7 +45,9 @@ function showSlide(n) {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
 
-  slides[slideIndex-1].style.display = "block";
+  // slides[slideIndex-1].style.display = "block";
+  let currentSlide = slides[slideIndex-1];
+  $(currentSlide).fadeIn(1000).delay(3200).fadeOut(800);
   dots[slideIndex-1].className += " active";
 
 }
@@ -53,7 +55,7 @@ function showSlide(n) {
 function showSlides() {
   slideIndex++;
   showSlide(slideIndex);
-  setTimeout(showSlides, 4000);
+  setTimeout(showSlides, 5000);
   
   
 }

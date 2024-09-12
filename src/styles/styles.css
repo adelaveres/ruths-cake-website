@@ -130,7 +130,7 @@ html {
       margin-bottom: 4.5px;
     }
     .logo{
-      width: 225px;
+      width: 250px;
       background-repeat: no-repeat;
     }
   }
@@ -140,14 +140,22 @@ html {
       right: 25px;
     } */
     .hamburger .line{
-      width: 30px;
+      width: 27px;
       height: 3.5px;
       margin-bottom: 4.5px;
     }
     .logo{
-      width: 220px;
+      width: 250px;
       background-repeat: no-repeat;
     }
+    main{
+      width: 100%;
+    }
+    body{
+      width: 100%;
+      padding: 0;
+    }
+    
   }
 
 

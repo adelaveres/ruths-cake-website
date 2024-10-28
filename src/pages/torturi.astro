@@ -34,7 +34,7 @@ const photoSources_caserola=[
 ---
 <BaseLayout>
 	<main>
-        <div class="sidebar-menu">
+        <!-- <div class="sidebar-menu">
             <div class="sidebar-item-box">
                 <a href="#aniversare">Aniversare</a>
             </div>
@@ -51,7 +51,7 @@ const photoSources_caserola=[
                 <a href="#caserola">Tort Caserola</a>
             </div>
 
-        </div>
+        </div> -->
 
         <div class="cakes-grid">
             
@@ -67,6 +67,21 @@ const photoSources_caserola=[
                 photoSources_aniversare.map( (photoSource) => (
                     <div class="img-wrapper">
                         <img  src={`/images/torturi/zile_nastere/${photoSource}-min.jpg`} alt="Little Cake">
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            
+                            <a href="javascript:void(0)" class = "closebtn">&times;</a>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="imgModal">
+
+                            {/* <!-- Modal Caption (Image Text) --> */}
+                            {/* <div id="caption"></div> */}
+
+                        </div>
                     </div>
                      ))
                 }
@@ -131,6 +146,7 @@ const photoSources_caserola=[
 
             
         </div>
+        <script src="../img_gallery.js"></script>
     </main>
 
 </BaseLayout>

@@ -107,6 +107,9 @@ main{
     opacity: 0.7;  
     
 }
+
+/* MODAL WINDOW */
+
 .modal img{
     border-radius: 10px;
     object-fit: contain;
@@ -116,7 +119,7 @@ main{
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     left:0;
     top:0;
     width: 100%;
@@ -144,21 +147,14 @@ main{
     position: absolute;
     top: 20px;
     right: 50px;
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 5em;
+    font-weight: 350;
     color: #3f383a;
     transition: 0.3s;
     z-index: 3;
+    text-shadow: 1px 0.5px 3px grey;
 }
-/* .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-} */
+
 
 .close:hover,
 .close:focus {

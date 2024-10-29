@@ -1,0 +1,96 @@
+#order-cakes-wrapper{
+    display: flex;
+    justify-content: center;
+    overflow: hidden; 
+    flex-wrap: wrap;
+} 
+.card{
+    position: relative;
+    margin: 20px;
+    height: 480px;
+
+}
+.left-side-card{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px 0 0 10px;
+}
+.img-wrapper{
+    width: 350px;
+    height: 350px;
+}
+.cake-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 300px; */
+    height: 100px;
+}
+.img-wrapper span{
+    font-size: 2.3em;
+    color: #584e51;
+    text-shadow: none;
+
+    position: static;
+
+    text-align: center;
+    
+}
+.cake-title span div{
+    font-size: 0.7em;
+    font-weight: 450;
+}
+.not-yet{
+    opacity: 0.3;
+}
+.img-wrapper:hover img{
+    pointer-events: none;
+}
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.card div:hover img{
+    opacity: 0.5;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+
+.side-arrow-btn{
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 10px 10px 0;
+    width: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.side-arrow-btn:hover{
+
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.1);
+    color:  rgb(216, 226, 220);
+    text-shadow: 1px 1px 5px grey;
+}
+
+.left-arrow-btn{
+    display: none;
+    /* background-color: #d8e2dc; */
+}
+
+.side-info{
+    display: none;
+    box-shadow: 3px 8px 10px 0px rgba(0,0,0,0.2);
+    width: 150px;
+    padding: 10px;
+    padding-top: 10px;
+    font-size: 1.2em;
+    background-color: #d8e2dc;
+    border-radius: 10px;
+    /* transition: 0.5s; */
+
+}
+.note{
+    font-size: 0.7em;
+    line-height: 1.35;
+}

@@ -1,181 +1,32 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
 import "../styles/torturi.css";
-const photoSources_aniversare = [
-    "20231014_130153", "20231021_101121", "20231023_115219",
-    "20231024_170129", "20231112_140037", "20231118_143645",
-    "20231209_134055", "20231230_121621", "20231230_175004",
-    "20231231_193247", "20240120_134350", "20240128_123218",
-    "20240216_062938", "20240317_082630", "20240323_101447",
-    "20240327_220934", "20240330_101640", "20240330_144659",
-    "20240402_104002", "20240406_122213", "20231230_121617",
-    "20240413_132843", "tort_gradinita",
-    "20231028_221923", "20230825_162757", "20230826_133656",
-    "20230909_104144", "20230916_135615", "20230922_160637",
-    "20230923_110015", "20230926_110400", "20231119_083632",
-    
-];
 
-const photoSources_botez =[
-    "20231006_161938", "20240103_165102", "IMG_20230305_152116"
-];
-
-const photoSources_majorat =[
-    "20230923_183747"
-];
-
-const photoSources_caserola=[
-    "IMG_20230307_145628", "IMG_20230307_145912", "IMG_20230307_150318",
-    "IMG_20230307_150708", "IMG_20230307_150804", "IMG_20230307_150818",
-    "IMG_20230307_150841", "IMG_20230307_150914", "IMG_20230307_151901",
-    "IMG_20230307_151949", "IMG_20230307_152345"
-];
 
 ---
 <BaseLayout>
 	<main>
-        <!-- <div class="sidebar-menu">
-            <div class="sidebar-item-box">
-                <a href="#aniversare">Aniversare</a>
-            </div>
+        
+        <div id="cards-wrapper">
 
-            <div class="sidebar-item-box">
-                <a href="#botez">Botez</a>
-            </div>
+			<a href="" id="torturi_comanda" class="card">
+				<div class="img-wrapper hover-effect">
+					<img src="/images/torturi/torturi_comanda/felii.jpeg" alt="Tort Comanda">
+					<span id="order_cakes">Torturi comandă</span>
+				</div>
+			</a>
 
-            <div class="sidebar-item-box">
-                <a href="#majorate">Majorate</a>
-            </div>
+            <a href="/torturi_galerie" id="torturi_comanda" class="card">
+				<div class="img-wrapper hover-effect">
+					<img src="/images/torturi/cakes_collage.png" alt="Tort Comanda">
+					<span>Galerie Foto</span>
+				</div>
+			</a>
 
-            <div class="sidebar-item-box">
-                <a href="#caserola">Tort Caserola</a>
-            </div>
-
-        </div> -->
-
-        <div class="cakes-grid">
-            
-            <div id="aniversare" class="breakline">
-                <img src="/images/line_heart_left.PNG" alt="">
-                <span>Aniversare</span>
-                <img src="/images/line_heart_right.PNG" alt="">
-            </div>
-
-            <div class="torturi-aniversare">
-                
-                { 
-                photoSources_aniversare.map( (photoSource) => (
-                    <div class="img-wrapper">
-                        <img  src={`/images/torturi/zile_nastere/${photoSource}-min.jpg`} alt="Little Cake">
-
-                        <!-- The Modal -->
-                        <div class="modal">
-
-                            <!-- The Close Button -->
-                            <a href="javascript:void(0)" class = "closebtn">&times;</a>
-
-                            <!-- Modal Content (The Image) -->
-                            <img class="modal-content" id="imgModal">
-
-                        </div>
-                    </div>
-                     ))
-                }
-
-            </div>
+        </div>
 
            
-            <div id="botez" class="breakline">
-                <img src="/images/line_heart_left.PNG" alt="">
-                <span>Botez</span>
-                <img src="/images/line_heart_right.PNG" alt="">
-            </div>
-
-            <div class="torturi-botez">
-                { 
-                photoSources_botez.map( (photoSource) => (
-                    <div class="img-wrapper">
-                        <img  src={`/images/torturi/botez/${photoSource}-min.jpg`} alt="Little Cake">
-                        <!-- The Modal -->
-                        <div  class="modal">
-
-                            <!-- The Close Button -->
-                            
-                            <a href="javascript:void(0)" class = "closebtn">&times;</a>
-
-                            <!-- Modal Content (The Image) -->
-                            <img class="modal-content" id="imgModal">
-
-                        </div>
-                    </div>
-                     ))
-                }
-
-            </div>
-
-            <div id="majorate" class="breakline">
-                <img src="/images/line_heart_left.PNG" alt="">
-                <span>Majorate</span>
-                <img src="/images/line_heart_right.PNG" alt="">
-            </div>
-
-            <div class="torturi-majorate">
-                
-                { 
-                photoSources_majorat.map( (photoSource) => (
-                    <div class="img-wrapper">
-                        <img  src={`/images/torturi/majorate/${photoSource}-min.jpg`} alt="Little Cake">
-                        <!-- The Modal -->
-                        <div class="modal">
-
-                            <!-- The Close Button -->
-                            
-                            <a href="javascript:void(0)" class = "closebtn">&times;</a>
-
-                            <!-- Modal Content (The Image) -->
-                            <img class="modal-content" id="imgModal">
-
-                        </div>
-                    </div>
-                     ))
-                }
-            </div>
-          
-            <div id="caserola" class="breakline">
-                <img src="/images/line_heart_left.PNG" alt="">
-                <span>Tort Caserola</span>
-                <img src="/images/line_heart_right.PNG" alt="">
-            </div>
-
-            <div  class="torturi-caserola">
-                { 
-                photoSources_caserola.map( (photoSource) => (
-                    <div class="img-wrapper">
-                        <img  src={`/images/torturi/caserola/${photoSource}-min.jpg`} alt="Little Cake">
-                        <!-- The Modal -->
-                        <div class="modal">
-
-                            <!-- The Close Button -->
-                            
-                            <a href="javascript:void(0)" class = "closebtn">&times;</a>
-
-                            <!-- Modal Content (The Image) -->
-                            <img class="modal-content" id="imgModal">
-
-                        </div>
-                    </div>
-                     ))
-                }
-{/* 
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.png" alt="Little Cake Symbol">
-                </div> */}
-
-            </div>
-
-            
-        </div>
-        <script src="../img_gallery.js"></script>
+        
     </main>
 
 </BaseLayout>

@@ -1,92 +1,30 @@
 main{
     position: relative;
-    top: -60px;
+    top: -80px;
     /* max-width: 95%; */
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
-    /* height: 600px; */
+    height: 600px;
 }
-/* .sidebar-menu{
-    width: 25%;
-    position: relative;
-    top: 50px;
-}
-
-.sidebar-item-box{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    min-width: 280px;
-    max-height: 120px;
-    text-align: center;
-    border-radius: 10px;
-}
-.sidebar-item-box:hover{
-    color: rgb(244, 111, 133);
-}
-.sidebar-item-box:hover a{
-    color: rgb(244, 111, 133);
-    box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
-    /* color: #f4acb7; 
-}
-
-
-.sidebar-item-box a{
-    text-decoration: none;
-    
-    color: #584e51;
-    font-family: "Cardo", serif;
-    font-size: 1.4em;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    
-
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-} */
-
-.cakes-grid{
-    overflow-y: auto;
-    /* padding-left: 25px;
-    position: relative; */
-    top: -20px;
-    height: 100%;
-    /* height: 600px; */
-    
-}
-.torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
-    background-color: #d8e2dc;
-    overflow: auto;
-    overflow-x: scroll;
-    white-space: nowrap;
-    padding: 10px;
-    border-radius: 10px;
-
-    /* display:flex;
-    flex-wrap: wrap;
+#cards-wrapper{
+    display:flex;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
-    margin-bottom: 60px; */
+    overflow: hidden; 
 }
 
- ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 5px;
-    height: 7px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, .5);
-    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+.card{
+    display:flex;
+    justify-content: space-around;
+}
 
-  } 
 .img-wrapper{
-    
-    display: inline-block;
-    margin: 15px;
-    width: 400px;
-    height: 400px;
+    margin: 5px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
 }
 .img-wrapper img{
     border-radius: 50%;
@@ -98,87 +36,28 @@ main{
     cursor: pointer; 
     transition: 0.3s;
 }
-.img-wrapper img:hover{
-    opacity: 0.7;  
+.img-wrapper:hover img{
+    opacity: 0.5;
+    transform: scale(1.03);
+    transition: 0.3s;
     
 }
-
-/* MODAL WINDOW */
-
-.modal img{
-    border-radius: 10px;
-    object-fit: contain;
-    margin: auto;
-    display: block;
-    /* max-width: 700px; */
-}
-.modal img:hover{
-    opacity: 1;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    /* padding-top: 10px; */
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-    /* rgba(216, 226, 220, 0.9); */
-}
-
-.modal a{
-    text-decoration: none;
-    display: block;
-}
-/* The Close Button */
-
-.closebtn {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    font-size: 5em;
-    font-weight: 350;
-    color: #3f383a;
-    transition: 0.3s;
-    z-index: 3;
-    text-shadow: 1px 0.5px 3px grey;
-}
-
-
-.close:hover,
-.close:focus {
-  color:  pink;
-  /* text-decoration: none;
-  cursor: pointer; */
-}
-
-
-.breakline{
-    display: flex;
-    justify-content: center;
+.hover-effect:hover span{
     color: #584e51;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 330;
-    font-size: 1.6em;
-    font-style: normal;
-    margin: 30px;
+    transition: 0.5s;
 }
 
-.breakline:first-child{
-    margin-top: 10px;
+.img-wrapper span{
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px grey;
 }
-.breakline span{
-    padding: 0 15px;
-    position: relative;
-    top:-5px;
-}
-.breakline img{
-    height: 25px;
+#order_cakes{
+    left: 60px;
 }
 
 /* Responsiveness */

@@ -1,60 +1,120 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
+import CakeCard from "../components/CakeCard.astro";
+import "../styles/torturi_comanda.css";
 import "../styles/prajituri.css";
 ---
 <BaseLayout>
 
 	<main>
-		<div class="sidebar-menu">
-            <div class="sidebar-item-box">
-                <a href="#tava">La tava</a>
-            </div>
-
-            <div class="sidebar-item-box">
-                <a href="#asortate">Asortate</a>
-            </div>
-
-            <div class="sidebar-item-box">
-                <a href="#copilariei">Prajiturile Copilariei</a>
-            </div>
-
-            <div class="sidebar-item-box">
-                <a href="#fursecuri">Fursecuri</a>
-            </div>
-        </div>
-
 
 		<div class="cakes-grid">
-            <span class="coming-soon-msg">În curând . . .</span>
+            <!-- <span class="coming-soon-msg">În curând . . .</span> -->
 
 			<div id="tava" class="breakline">
                 <img src="/images/line_heart_left.PNG" alt="">
-                <span>La tava</span>
+                <span>La tavă</span>
                 <img src="/images/line_heart_right.PNG" alt="">
             </div>
 
 			<div class="prajituri-tava">
-				<div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
+				<CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prajitură Kinder"
+                cakeTitle="Kinder Bueno"
+                price="70"
+                creamInfo="cremă de vanilie și ciocolată, frișcă."
+                blatInfo="blat cu nucă."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură Snickers"
+                cakeTitle="Snickers"
+                price="70"
+                creamInfo="ganache de ciocolată albă, caramel, ganache de ciocolată neagră."
+                blatInfo="blat cu nucă."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură Șumeghi"
+                cakeTitle="Șumeghi"
+                price="70"
+                creamInfo="cremă de gălbenușuri și ciocolată."
+                blatInfo="foi cu nucă."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură Fanta"
+                cakeTitle="Fanta"
+                price="70"
+                creamInfo="cremă de brânză, jeleu de Fanta."
+                blatInfo="blat pandișpan de ciocolată."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură Bounty"
+                cakeTitle="Bounty"
+                price="70"
+                creamInfo="cremă de cocos, ganache de ciocolată."
+                blatInfo="blat pandișpan de ciocolată."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură Lămâița"
+                cakeTitle="Lămâița"
+                price="70"
+                creamInfo="cremă de lămâie."
+                blatInfo="foi fragede."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură Medovik"
+                cakeTitle="Medovik"
+                price="70"
+                creamInfo="cremă de caramel."
+                blatInfo="foi cu miere."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură Mac și vanilie"
+                cakeTitle="Mac și vanilie"
+                price="70"
+                creamInfo="cremă de vanilie, mousse de fructe."
+                blatInfo="blat de mac."
+                noPicYet="true"/>
+
 			</div>
+
+            <div id="speciale" class="breakline">
+                <img src="/images/line_heart_left.PNG" alt="">
+                <span>Speciale</span>
+                <img src="/images/line_heart_right.PNG" alt="">
+            </div>
+
+            <div class="prajituri-speciale">
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Pavlova"
+                cakeTitle="Pavlova"
+                price="120"
+                creamInfo=" - "
+                blatInfo=" - "
+                noPicYet=true/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Carrot cake"
+                cakeTitle="Carrot cake"
+                price="90"
+                creamInfo=" - "
+                blatInfo=" - "
+                noPicYet=true/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Red velvet"
+                cakeTitle="Red velvet"
+                price="90"
+                creamInfo=" - "
+                blatInfo=" - "
+                noPicYet=true/>
+            </div>
 
 
 			<div id="asortate" class="breakline">
@@ -64,89 +124,76 @@ import "../styles/prajituri.css";
             </div>
 
 			<div class="prajituri-asortate">
-				<div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
+				<CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjituri Asortate"
+                cakeTitle="Asortate"
+                price="70"
+                creamInfo="specific fiecărei prăjituri."
+                blatInfo="specific fiecărei prăjituri."/>
 			</div>
 
 			<div id="copilariei" class="breakline">
                 <img src="/images/line_heart_left.PNG" alt="">
-                <span>Prajiturile Copilariei</span>
+                <span>Prajiturile Copilăriei</span>
                 <img src="/images/line_heart_right.PNG" alt="">
             </div>
 
 			<div class="prajiturile-copilariei">
-				<div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Chec"
+                cakeTitle="Chec (variații)"
+                price="50"
+                creamInfo=" - "
+                blatInfo="blat pandișpan simplu/ choco chips/ vișine/ zmeură/ afine."
+                noPicYet="true"/>
+
+				<CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură cu măr"
+                cakeTitle="Prăjitură cu măr"
+                price="60"
+                creamInfo="umplutură cu măr."
+                blatInfo="blat pandișpan."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură cu brânză"
+                cakeTitle="Prăjitură cu brânză"
+                price="60"
+                creamInfo="umplutură cu brânză."
+                blatInfo="blat pandișpan."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Prăjitură cu mălai"
+                cakeTitle="Prăjitură cu mălai"
+                price="50"
+                creamInfo=" - "
+                blatInfo="blat cu mălai."
+                noPicYet="true"/>
+
+                <CakeCard src="/images/prajituri/prajituri_asortate.jpeg" 
+                alt="Salam de biscuiți"
+                cakeTitle="Salam de biscuiți"
+                price="50"
+                creamInfo="cremă ciocolată."
+                blatInfo="biscuiți."
+                noPicYet="true"/>
 			</div>
 
-			<div id="fursecuri" class="breakline">
+			<!-- <div id="fursecuri" class="breakline">
                 <img src="/images/line_heart_left.PNG" alt="">
                 <span>Fursecuri</span>
                 <img src="/images/line_heart_right.PNG" alt="">
             </div>
 
 			<div class="fursecuri">
-				<div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-                <div class="img-wrapper">
-                    <img src="/images/cake_photo_min.PNG" alt="Little Cake Symbol">
-                    
-                </div>
-			</div>
+				
+			</div> -->
 		
 
 		</div>
 
 	</main>
+    <script src="../prajituri.js"></script>
 
 </BaseLayout>

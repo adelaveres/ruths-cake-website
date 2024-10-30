@@ -1,0 +1,46 @@
+---
+import "../styles/torturi_comanda.css";
+const { src, alt, cakeTitle, price, creamInfo, noPicYet=false } = Astro.props;
+---
+
+
+
+<div class="card">
+
+    <div class="left-side-card">
+        <div class="img-wrapper hover-effect">    
+            <img class={ noPicYet ? "not-yet" : "" } src={ src } alt={ alt } >
+            <div class="cake-title">
+                <span> {cakeTitle} <div> {price} lei/kg</div></span>
+            </div> 
+        </div>
+    </div>
+
+    
+    <div class="down-arrow-btn down-open-btn">
+        <i class="fa fa-3x fa-caret-down" aria-hidden="true"></i>
+    </div>
+    
+
+    <div class="side-arrow-btn right-arrow-btn">
+        <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
+    </div>
+
+    <div class="side-info">
+        <p><strong>Crema:</strong> <br> { creamInfo } </p>
+        <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
+        <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
+        <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
+    </div>
+
+
+    <div class="down-arrow-btn down-close-btn">
+        <i class="fa fa-3x fa-caret-up" aria-hidden="true"></i>
+    </div>
+
+    <div class="side-arrow-btn left-arrow-btn">
+        <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
+    </div>
+
+
+</div>

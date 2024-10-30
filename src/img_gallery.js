@@ -24,7 +24,7 @@ $(document).ready(function() {
             let closeBtn = $(modalWindow).find(".closebtn")[0];
 
             currPhotoWrapper.addEventListener('click', ()=>{
-                // Open Modal
+                // Open Modal   
                 modalWindow.style.display = 'block';
             });
 

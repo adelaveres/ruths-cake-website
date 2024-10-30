@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
-import "../styles/torturi.css";
+import CakeCard from "../components/CakeCard.astro";
 import "../styles/torturi_comanda.css";
 
 ---
@@ -8,336 +8,88 @@ import "../styles/torturi_comanda.css";
 	<main>
         <div id="order-cakes-wrapper">
             
-            
-                <div class="card">
+            <CakeCard src="/images/torturi/torturi_comanda/kinder.jpeg" 
+                alt="Tort Kinder"
+                cakeTitle="Kinder Bueno"
+                price="95"
+                creamInfo="ciocolată albă, ciocolată neagră, inserție crunchy."/>
 
-                    <div class="left-side-card">
-                        <div class="img-wrapper hover-effect">
-                            
-                            <img src="/images/torturi/torturi_comanda/kinder.jpeg" alt="Tort Kinder">
-                            <div class="cake-title">
-                                <span id="kinder-title">Kinder Bueno<div> 95 lei/kg</div></span>
-                            </div>
-     
-                        </div>
-                    </div>
+            <CakeCard src="/images/torturi/torturi_comanda/Primavera2.jpeg" 
+                alt="Tort Primavera"
+                cakeTitle="Primavera"
+                price="95"
+                creamInfo="ciocolată albă, inserție de zmeură, mousse de zmeură."/>    
 
-                    <div class="side-arrow-btn right-arrow-btn">
-                        <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                    </div>
-    
-                    <div class="side-info">
-                        <p><strong>Crema:</strong> <br> ciocolată albă, ciocolată neagră, inserție crunchy.</p>
-                        <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                        <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                        <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                    </div>
+            <CakeCard src="/images/torturi/torturi_comanda/caramel_zmeura2.jpeg" 
+                alt="Tort Caramel"
+                cakeTitle="Caramel și zmeură"
+                price="95"
+                creamInfo="ciocolată albă, inserție caramel, inserție zmeură, bucăți de zmeură."/>    
 
-                    <div class="side-arrow-btn left-arrow-btn">
-                        <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                    </div>
-    
-                </div>
+            <CakeCard src="/images/torturi/torturi_comanda/tort_visine.jpeg" 
+                alt="Tort Visine"
+                cakeTitle="Vișine"
+                price="95"
+                creamInfo="ciocolată albă / ciocolată neagră, inserție de vișine."/>    
+           
+            <CakeCard src="/images/torturi/torturi_comanda/snickers.jpeg" 
+                alt="Tort Snickers"
+                cakeTitle="Snickers"
+                price="95"
+                creamInfo="ciocolată neagră, caramel, arahide crocante."/>    
 
+
+            <CakeCard src="/images/torturi/torturi_comanda/zmeura_fistic.jpeg" 
+                alt="Tort Fistic"
+                cakeTitle="Zmeură și fistic"
+                price="95"
+                creamInfo="ciocolată albă / ciocolată neagră, bucați zmeură, bucăți fistic."/>    
+
+            <CakeCard src="/images/torturi/torturi_comanda/felii_box.jpeg" 
+                alt="Tort Raffaello"
+                cakeTitle="Raffaello"
+                price="95"
+                creamInfo="ciocolată albă, crocant de Raffaello."
+                noPicYet=true/>   
                 
+            <CakeCard src="/images/torturi/torturi_comanda/felii_box.jpeg" 
+                alt="Tort Bounty"
+                cakeTitle="Bounty"
+                price="90"
+                creamInfo="ciocolată neagră, cremă de cocos."
+                noPicYet=true/> 
+
+            <CakeCard src="/images/torturi/torturi_comanda/felii_box.jpeg" 
+                alt="Tort Dietetic"
+                cakeTitle="Dietetic"
+                price="95"
+                creamInfo="brânză philadelphia, cremă de fructe, fructe (afine, zmeură, mure la alegere)."
+                noPicYet=true/> 
+
+            <CakeCard src="/images/torturi/torturi_comanda/felii_box.jpeg" 
+                alt="Tort Exotic"
+                cakeTitle="Exotic"
+                price="100"
+                creamInfo="cremă de brânză, ciocolată albă, fructul pasiunii, mango."
+                noPicYet=true/> 
+
+            <CakeCard src="/images/torturi/torturi_comanda/felii_box.jpeg" 
+                alt="Tort Profiterols"
+                cakeTitle="Profiterols"
+                price="100"
+                creamInfo="ciocolată neagră și profiterols, ciocolată albă și zmeură."
+                noPicYet=true /> 
+
+           
             
+            <!-- The Modal -->
+            <div class="modal">
 
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img src="/images/torturi/torturi_comanda/Primavera2.jpeg" alt="Tort Primavera">
-                        <div class="cake-title">
-                            <span id="primavera-title">Primavera<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
+                <!-- The Close Button -->
+                <a href="javascript:void(0)" class = "closebtn">&times;</a>
 
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> ciocolată albă, inserție de zmeură, mousse de zmeură.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img src="/images/torturi/torturi_comanda/caramel_zmeura2.jpeg" alt="Tort Caramel">
-                        <div class="cake-title">
-                            <span id="caramel-title">Caramel și zmeură<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> ciocolată albă, inserție caramel, inserție zmeură, bucăți de zmeură.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img src="/images/torturi/torturi_comanda/tort_visine.jpeg" alt="Tort Visine">
-                        <div class="cake-title">
-                            <span id="visine-title">Vișine<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> ciocolată albă / ciocolată neagră, inserție de vișine.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img src="/images/torturi/torturi_comanda/snickers.jpeg" alt="Tort Snickers">
-                        <div class="cake-title">
-                            <span id="snickers-title">Snickers<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> ciocolată neagră, caramel, arahide crocante.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img src="/images/torturi/torturi_comanda/zmeura_fistic.jpeg" alt="Tort Fistic">
-                        <div class="cake-title">
-                            <span id="fistic-title">Zmeură și fistic<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> ciocolată albă / ciocolată neagră, bucați zmeură, bucăți fistic.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img class="not-yet" src="/images/torturi/torturi_comanda/felii_box.jpeg" alt="Tort Raffaello">
-                        <div class="cake-title">
-                            <span id="raffaello-title">Raffaello<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> Cremă Raffaello.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img class="not-yet" src="/images/torturi/torturi_comanda/felii_box.jpeg" alt="Tort Bounty">
-                        <div class="cake-title">
-                            <span id="bounty-title">Bounty<div> 90 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> ciocolată neagră, cremă de cocos.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img class="not-yet" src="/images/torturi/torturi_comanda/felii_box.jpeg" alt="Cheesecake">
-                        <div class="cake-title">
-                            <span id="cheesecake-title">Cheesecake<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> brânză de vaci, fructe (afine, zmeură, mure la alegere).</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img class="not-yet" src="/images/torturi/torturi_comanda/felii_box.jpeg" alt="Tort Dietetic">
-                        <div class="cake-title">
-                            <span id="dietetic-title">Dietetic<div> 95 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> brânză philadelphia, cremă de fructe, fructe (afine, zmeură, mure la alegere).</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img class="not-yet" src="/images/torturi/torturi_comanda/felii_box.jpeg" alt="Tort Exotic">
-                        <div class="cake-title">
-                            <span id="exotic-title">Exotic<div> 100 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> cremă de brânză, ciocolată albă, fructul pasiunii, mango.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="left-side-card">
-                    <div class="img-wrapper hover-effect">
-                        <img class="not-yet" src="/images/torturi/torturi_comanda/felii_box.jpeg" alt="Tort Profiterols">
-                        <div class="cake-title">
-                            <span id="profiterols-title">Profiterols<div> 100 lei/kg</div></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="side-arrow-btn right-arrow-btn">
-                    <i class="fa fa-3x fa-caret-right right-arrow" aria-hidden="true"></i>
-                </div>
-
-                <div class="side-info">
-                    <p><strong>Crema:</strong> <br> ciocolată neagră și profiterols, ciocolată albă și zmeură.</p>
-                    <p><strong>Blat:</strong> <br> vanilie / cacao.</p>
-                    <p class="note"><strong>*</strong> Torturile îmbrăcate în cremă de unt și pastă de zahăr vor fi la 120 lei/kg.</p>
-                    <p class="note"><strong>*</strong> Decorul se va calcula separat.</p>
-                </div>
-
-                <div class="side-arrow-btn left-arrow-btn">
-                    <i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>
-                </div>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="imgModal">
 
             </div>
 

@@ -1,23 +1,51 @@
+main{
+    position: relative;
+    top: -80px;
+    /* max-width: 95%; */
+    width: 90%;
+    margin: 0 auto;
+   
+}
+
 #order-cakes-wrapper{
     display: flex;
     justify-content: center;
-    overflow: hidden; 
     flex-wrap: wrap;
+    height: auto;
+    overflow-y: auto;
 } 
 .card{
-    position: relative;
-    margin: 20px;
-    height: 480px;
+    /* position: relative; */
+    display:flex;
+    justify-content: space-around;
+    margin: 10px 30px;
+    /* height: 480px; */
 
 }
 .left-side-card{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px 0 0 10px;
+    height: 480px;
 }
 .img-wrapper{
+    position: relative;
+    margin: 5px;
+    padding: 10px;
     width: 350px;
     height: 350px;
+    cursor: pointer;
 }
+.img-wrapper img{
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
 .cake-title{
     display: flex;
     align-items: center;
@@ -25,15 +53,17 @@
     /* width: 300px; */
     height: 100px;
 }
+.hover-effect:hover span{
+    color: #584e51;
+    transition: 0.5s;
+}
 .img-wrapper span{
+    position: static;
     font-size: 2.3em;
+    font-weight: 700;
     color: #584e51;
     text-shadow: none;
-
-    position: static;
-
     text-align: center;
-    
 }
 .cake-title span div{
     font-size: 0.7em;
@@ -54,6 +84,8 @@
     transform: scale(1.03);
     transition: 0.3s;
 }
+
+/* SIDE ARROWS */
 
 
 .side-arrow-btn{
@@ -78,6 +110,29 @@
     /* background-color: #d8e2dc; */
 }
 
+
+.down-arrow-btn{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;    
+
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    border-radius: 0 0 10px 10px;
+    height: 35px;
+}
+.down-arrow-btn:hover{
+
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.1);
+    color:  rgb(216, 226, 220);
+    text-shadow: 1px 1px 5px grey;
+}
+
+.down-open-btn{
+    /* margin-top: 100px; */
+}
+
 .side-info{
     display: none;
     box-shadow: 3px 8px 10px 0px rgba(0,0,0,0.2);
@@ -93,4 +148,109 @@
 .note{
     font-size: 0.7em;
     line-height: 1.35;
+}
+
+/* MODAL WINDOW */
+
+.modal img{
+    border-radius: 10px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    max-width: 700px;
+}
+.modal img:hover{
+    opacity: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    /* padding-top: 10px; */
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    /* rgba(216, 226, 220, 0.9); */
+}
+
+.modal a{
+    text-decoration: none;
+    display: block;
+}
+/* The Close Button */
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 5em;
+    font-weight: 350;
+    color: #3f383a;
+    transition: 0.3s;
+    z-index: 3;
+    text-shadow: 1px 0.5px 3px grey;
+}
+
+
+/* .close:hover,
+.close:focus {
+    color:  pink;
+    text-decoration: none;
+    cursor: pointer; 
+} */
+
+
+@media screen and (min-width: 501px){
+    .card{
+        flex-direction: row;
+        margin: 10px 20px;
+    }
+    .side-info{
+        /* display: none; */
+        width: 150px;
+    }
+    .left-side-card{
+        border-radius: 10px;
+    }
+    .down-arrow-btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .card{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .left-side-card{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .left-arrow-btn{
+        display: none;
+    }
+    .right-arrow-btn{
+        display: none;
+    }
+    .side-arrow-btn{
+        display: none;
+    }
+    
+    
+
+    .down-open-btn{
+        display: flex;
+    }
+
+    .side-info{
+        /* display: block; */
+        width: inherit;
+        border-radius: 0 0 10px 10px;
+    }
 }

@@ -2,6 +2,14 @@ let slideIndex = 0;
 let slides = document.getElementsByClassName("slide-item");
 let dots = document.getElementsByClassName("dot");
 showSlides();
+window.addEventListener('resize', handleResizeScreen);
+let wedPhoto = document.getElementById("wed-img");
+let cakesPhoto = document.getElementById("cakes-img");
+let candybarPhoto = document.getElementById("candybar-img");
+let annivPhoto = document.getElementById("anniv-img");
+let specialPhoto = document.getElementById("special-img");
+setInitialSlidePhotos();
+
 
 // Next/previous controls
 function plusSlides(n) {
@@ -47,7 +55,7 @@ function showSlide(n) {
 
   // slides[slideIndex-1].style.display = "block";
   let currentSlide = slides[slideIndex-1];
-  $(currentSlide).fadeIn(1000).delay(3200).fadeOut(800);
+  $(currentSlide).fadeIn(2000).delay(3200).fadeOut(800);
   dots[slideIndex-1].className += " active";
 
 }
@@ -55,10 +63,74 @@ function showSlide(n) {
 function showSlides() {
   slideIndex++;
   showSlide(slideIndex);
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 6000);
   
   
 }
+
+function setInitialSlidePhotos(){
+  
+  
+  if(window.innerWidth < 600){
+    wedPhoto.src = "/images/slideshow/20230826_235904_2.jpg";
+    cakesPhoto.src = "/images/slideshow/20240511_174947.jpg";
+    candybarPhoto.src = "/images/slideshow/candybar_hero_photo.jpg";
+    annivPhoto.src = "/images/slideshow/20220804_232443.jpg";
+    specialPhoto.src = "/images/slideshow/20240621_083605.jpg";
+  }else
+  if(window.innerWidth < 840){
+    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";
+    annivPhoto.src = "/images/slideshow/birthday_collage_medium_screen.jpg";
+    specialPhoto.src = "/images/slideshow/special_collage_medium_screen.jpg";
+  }else if(window.innerWidth < 970){
+    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";
+
+      
+  }
+}
+
+function handleResizeScreen(){
+  
+
+  if(window.innerWidth < 600){
+    
+    wedPhoto.src = "/images/slideshow/20230826_235904_2.jpg";
+    cakesPhoto.src = "/images/slideshow/20240511_174947.jpg";
+    candybarPhoto.src = "/images/slideshow/candybar_hero_photo.jpg";
+    annivPhoto.src = "/images/slideshow/20220804_232443.jpg";
+    specialPhoto.src = "/images/slideshow/20240621_083605.jpg";
+  
+  }else
+  if(window.innerWidth < 840){
+    // reset
+    wedPhoto.src = "/images/slideshow/wed_collage7.jpg";
+    candybarPhoto.src = "/images/slideshow/candybar_collage2.jpg";
+    //
+    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";
+    annivPhoto.src = "/images/slideshow/birthday_collage_medium_screen.jpg";
+    specialPhoto.src = "/images/slideshow/special_collage_medium_screen.jpg";
+  }
+  else if(window.innerWidth < 970){
+    // reset
+    wedPhoto.src = "/images/slideshow/wed_collage7.jpg";
+    candybarPhoto.src = "/images/slideshow/candybar_collage2.jpg";
+    annivPhoto.src = "/images/slideshow/birthday_collage_res.jpg";
+    specialPhoto.src = "/images/slideshow/special_ocasions_collage_res.jpg";
+    //
+    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";   
+  }
+  else{
+    //reset all
+    wedPhoto.src = "/images/slideshow/wed_collage7.jpg";
+    candybarPhoto.src = "/images/slideshow/candybar_collage2.jpg";
+    annivPhoto.src = "/images/slideshow/birthday_collage_res.jpg";
+    specialPhoto.src = "/images/slideshow/special_ocasions_collage_res.jpg";
+    cakesPhoto.src = "/images/slideshow/wed_cake_collage_res.jpg";  
+  }
+}
+  
+  
+
 
 
 

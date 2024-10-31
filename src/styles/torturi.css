@@ -9,13 +9,14 @@ main{
 #cards-wrapper{
     display:flex;
     /* flex-wrap: wrap; */
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden; 
 }
 
 .card{
     display:flex;
     justify-content: space-around;
+    margin: 10px 40px;
 }
 
 .img-wrapper{

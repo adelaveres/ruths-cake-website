@@ -17,7 +17,10 @@ main{
     
 }
 .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
-    background-color: #d8e2dc;
+    /* background-color: #d8e2dc; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 0 20px;
+    border-radius: 10px;
     overflow: auto;
     overflow-x: scroll;
     white-space: nowrap;

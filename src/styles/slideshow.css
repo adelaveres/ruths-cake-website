@@ -1,9 +1,7 @@
-
-
 .slideshow-container{
     /* max-width: 100%; */
-    width: 85%;
-    height: 600px;
+    width: 94%;
+    height: 700px;
     position: relative;
     margin: auto;
     top: -110px;
@@ -67,16 +65,16 @@
     position: absolute;
     color: #f2f2f2;
     text-align: center;
-    top: 370px;
-    left: 8%;
-    font-size: 14em;
+    bottom: -140px;
+    left: 7%;
+    font-size: 17em;
     font-weight: 600;
 }
 
 .slideshow-dots{
     text-align: center;
     position: relative;
-    top: -90px;
+    top: -160px;
 }
 
 /* The dots/bullets/indicators */
@@ -99,78 +97,163 @@
 
 .zoom-in{
     animation-name: zoom;
-    animation-duration: 9s;
+    animation-duration: 10s;
     
 }
 @keyframes zoom {
-    from {scale: 0.9;}
-    to {scale: 1.13;}
+    from {scale: 1;}
+    to {scale: 1.11;}
 }
 
+.sm-screen-slide{
+    display: none;
+}
+
+/* Responsiveness */
+
+/* @media screen and (max-width: 2600px){
+    .slideshow-container{
+        height: 1000px;
+    }
+} */
 @media screen and (max-width: 1500px){
+    .slideshow-container{
+        height: 700px;
+    }
+    #candybar-text{
+        bottom: -120px;
+        left: 7%;
+        font-size: 14.5em;
+        font-weight: 600;
+        
+    }
+}
+
+@media screen and (max-width: 1400px){
     .slide-text{
-        top: 400px;
-        left: 80px;
+        bottom: -120px;
+        left: 7%;
+        font-size: 14em;
+        font-weight: 600;
+    }
+    #candybar-text{
+        bottom: -100px;
+        left: 5%;
+        font-size: 12em;
+        font-weight: 500;
+        
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .slide-text{
+        bottom: -100px;
+        left: 3%;
+        font-size: 13em;
+        font-weight: 600;
+    }
+    #candybar-text{
+        bottom: -100px;
+        left: 3%;
+        font-size: 12em;
+        font-weight: 500;
+        
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .slide-text{
+        bottom: -70px;
+        left: 20px;
         font-size: 10em;
-        font-weight: 400;
+        font-weight: 450;
+    }
+    #candybar-text{
+        bottom: -70px;
+        left: 20px;
+        font-size: 10em;
+        font-weight: 450;
+        
     }
 }
 
-@media screen and (max-width: 1000px){
+ /* 970 px - cake collage turns to two pictures/slide (JS file) */
+
+@media screen and (max-width: 930px){
     .slide-text{
-        top: 450px;
-        left: 50px;
-        font-size: 8em;
-        font-weight: 400;
-    }
-}
-@media screen and (max-width: 760px){
-    .slide-text{
-        top: 480px;
-        left: 30px;
-        font-size: 6em;
-        font-weight: 400;
-    }
-}
-@media screen and (max-width: 500px){
-    .slide-text{
-        top: 500px;
+        bottom: -60px;
         left: 20px;
+        font-size: 9em;
+        font-weight: 450;
+    }
+    #candybar-text{
+        bottom: -60px;
+        left: 20px;
+        font-size: 9em;
+        font-weight: 450;
+        
+    }
+}
+ /* 840 px - anniversarry & special cake collages turn to two pictures/slide (JS file) */
+
+@media screen and (max-width: 840px){
+    .slide-text{
+        bottom: -40px;
+        left: 20px;
+        font-size: 7em;
+        font-weight: 450;
+    }
+    #candybar-text{
+        bottom: -40px;
+        left: 20px;
+        font-size: 7em;
+        font-weight: 450;
+        
+    }
+    .slideshow-container{
+        height: 600px;
+    }
+    /* .slideshow-dots{
+        display:none; 
+    } */
+    
+}
+
+@media screen and (max-width: 600px){
+    .slide-text{
+        bottom: -25px;
+        left: 10px;
+        font-size: 5em;
+        font-weight: 450;
+    }
+    #candybar-text{
+        bottom: -25px;
+        left: 10px;
+        font-size: 5em;
+        font-weight: 450;
+    }
+    .slide-item{display: none;}
+    .sm-screen-slide{display: block;}
+}
+
+@media screen and (max-width: 480px){
+    .slide-text{
+        bottom: -15px;
+        left: 10px;
         font-size: 4em;
-        font-weight: 400;
+        font-weight: 450;
     }
-}
-
-@media screen and (max-width: 445px){
-    .slide-text{
-        top: 500px;
-        left: 20px;
+    #candybar-text{
+        bottom: -15px;
+        left: 10px;
         font-size: 3.5em;
-        font-weight: 400;
+        font-weight: 450;
+        
     }
 }
-
-@media screen and (max-width: 430px){
-    .slide-text{
-        top: 530px;
-        left: 30px;
-        font-size: 3.2em;
-        font-weight: 400;
-    }
-}
-@media screen and (max-width: 400px){
-    .slide-text{
-        top: 520px;
-        left: 15px;
-        font-size: 3.2em;
-        font-weight: 400;
-    }
-    main{
-        width: 100%;
-    }
+@media screen and (max-width: 425px){
     body{
         width: 100%;
         padding: 0;
-
     }
 }

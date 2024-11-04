@@ -1,12 +1,7 @@
-main{
-    position: relative;
-    top: -110px;
-    /* max-width: 95%; */
-    width: 95%;
+section{
+    /* width: 95%; */
     margin: 0 auto;
-    height: 580px;
     color: #584e51;
-
 }
 
 .cards-wrapper{
@@ -56,7 +51,7 @@ p{
 .breakline span{
     padding: 0 10px;
     position: relative;
-    top:-5px;
+    top: -5px;
 }
 
 .option-title{

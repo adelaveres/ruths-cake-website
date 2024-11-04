@@ -1,11 +1,7 @@
-main{
-    position: relative;
-    top: -80px;
-    /* max-width: 95%; */
-    width: 95%;
+section{
     margin: 0 auto;
-    height: 510px;
-
+    height: 100%;
+    padding-top: 30px;
 }
 #cards-wrapper{
     display:flex;
@@ -13,17 +9,14 @@ main{
     justify-content: space-around;
     overflow: hidden; 
 }
-
 .card{
-    display:flex;
-    justify-content: space-around;
+    margin: 10px;
 }
 
 .img-wrapper{
     margin: 5px;
     width: 450px;
     height: 450px;
-    padding: 10px;
     position: relative;
     cursor: pointer;
 }
@@ -55,8 +48,8 @@ main{
     top: 220px;
     left: 40px;
     color: white;
-    font-size: 2.9em;
-    font-weight: 650;
+    font-size: 3em;
+    font-weight: 700;
     text-shadow: 1px 1px 5px grey;
 }
 
@@ -97,7 +90,7 @@ main{
     max-height: 120px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: #73db9d;
 }
 .offer-btn a{

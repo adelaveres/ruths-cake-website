@@ -1,16 +1,13 @@
-main{
-    position: relative;
-    top: -80px;
-    max-width: 95%;
+section{
     width: 90%;
     margin: 0 auto;
-    /* height: 600px; */
+    /* padding-top: 20px; */
 }
 .cakes-grid{
     /* display: flex;
     justify-content: center; */
     overflow-y: auto;
-    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap; */ 
     height: auto;
 
     /* padding-left: 30px;

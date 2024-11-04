@@ -1,10 +1,7 @@
-main{
-    position: relative;
-    top: -60px;
-    /* max-width: 95%; */
-    width: 95%;
+section{
+    height: 100%;
     margin: 0 auto;
-    /* height: 600px; */
+    width: 100%;
 }
 
 .cakes-grid{

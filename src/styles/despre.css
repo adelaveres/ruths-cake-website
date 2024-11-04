@@ -1,29 +1,30 @@
-main{
-    position: relative;
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
-    top: -100px;
-    width: 90%;
-    height: 650px;
-    background-color:  #d8e2dc;
-    border-radius: 50%;
-    padding: 100px;
+    margin: 0 auto;
+    /* margin-top: 15px; */
+    background-color:  #d8e2dc; 
+    border-radius: 10px;
+    height: 100%;
+    width: 95%;
+    box-shadow: 0px 0px 10px grey;
+    
 }
-.first-part{
+/* .first-part{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .first-line{
     padding-left: 100px;
-}
+} */
 p{
     margin:10px;
 }
 .about-text{
     text-align: center;
+    padding: 30px;
     line-height: 1.3;
     position: relative;
     top: 15px;
@@ -38,13 +39,17 @@ p{
     color: #64a27d;
 }
 
-.adina-img{
-    border-radius:50%;
-    height: 200px;
-    margin: 20px;
-    margin-bottom: 0;
+.img-wrapper{
+    width: 1300px;
+    height: inherit;
 }
-.sm-screen-img{
+.adina-img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* .sm-screen-img{
     display: none;
 }
 .smallest-screen-img{
@@ -52,7 +57,7 @@ p{
 }
 .the-smallest-screen-img{
     display: none;
-}
+} */
 
 
 .breakline{
@@ -63,18 +68,60 @@ p{
     font-weight: 500;
     font-style: normal;
     font-size: 1.4em;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    /* margin-bottom: 30px; */
 }
 
 .breakline:first-child{
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-bottom: 40px;
 }
 .breakline img{
     height: 25px;
 }
+.small-screens{
+    display: none;
+}
 
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 1310px){
+    .breakline{
+        margin-top: 20px;
+    }
+    .breakline:first-child{
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 1230px){
+    /* main{
+        height: 700px;
+    } */
+}
+
+
+@media screen and (max-width: 1115px){
+    .small-screens{
+        display: block;
+    }
+    .large-screens{
+        display: none;
+    }
+    .img-wrapper{
+        width: 100%;
+        height: 450px;
+        
+    }
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* 
 @media screen and (max-width: 1200px){
     main{
         border-radius: 10px;
@@ -161,4 +208,4 @@ p{
         align-items: center;
     }
    
-  }
+  } */

@@ -1,26 +1,19 @@
-main{
-    position: relative;
-    top: -80px;
-    /* max-width: 95%; */
+section{
     width: 90%;
     margin: 0 auto;
-   
 }
 
 #order-cakes-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     height: auto;
     overflow-y: auto;
 } 
 .card{
-    /* position: relative; */
     display:flex;
     justify-content: space-around;
     margin: 10px 30px;
-    /* height: 480px; */
-
 }
 .left-side-card{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

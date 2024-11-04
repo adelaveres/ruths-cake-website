@@ -1,10 +1,9 @@
 .slideshow-container{
     /* max-width: 100%; */
-    width: 94%;
-    height: 700px;
     position: relative;
+    width: 95%;
+    height: 670px;
     margin: auto;
-    top: -110px;
     overflow: hidden; 
     border-radius: 10px;
     /* background-color: #d8e2dc; */
@@ -24,7 +23,6 @@
     object-fit: cover;
     /* margin-top: 30px; */
 }
-
 .slide-logo img{
     object-fit: contain;
 }
@@ -49,7 +47,7 @@
 
 /* Position the "next button" to the right */
 #nextBtn{
-    right: 0;
+    right: 0px;
     border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
@@ -69,6 +67,7 @@
     left: 7%;
     font-size: 17em;
     font-weight: 600;
+    text-shadow: 1px 1px 5px rgb(192, 192, 192);
 }
 
 .slideshow-dots{

@@ -1,28 +1,19 @@
 header{
-    position: relative;
-    top: -50px;
-    width: 95%;
-    margin: auto;
-    
+    position: fixed;
+    width: 100%;
+    padding: 10px 30px 0px 30px;
+    margin: 0 auto;   
+    background-color: rgba(241, 245, 249, 0.95);
 }
 
-nav{
-    
-    position: relative;
-    height: 180px;
-}
+
 .initial-menu-list{
-    
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* top: 5rem;
-    left: 48px; */
-    /* background-color: #ff9776; */
-    /* display: none; */
-    margin-top: 40px;
+    margin: 0px;
     padding: 0;
 
 
@@ -31,8 +22,6 @@ nav{
     font-weight: 500;
     font-style: normal;
     font-size: 1.3em;
-    
-
     
 }
 .menu-items-list{

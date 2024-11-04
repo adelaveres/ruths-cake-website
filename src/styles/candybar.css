@@ -1,15 +1,12 @@
-main{
-    position: relative;
-    top: -110px;
-    /* max-width: 95%; */
-    width: 95%;
+section{
+    /* width: 95%; */
     margin: 0 auto;
     height: 680px;
     display: flex;
     justify-content: space-around;
 }
 
-section{
+.side{
     height:inherit;
     padding: 0px 20px;
     border-radius: 10px;

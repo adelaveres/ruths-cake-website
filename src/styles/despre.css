@@ -3,7 +3,7 @@ section{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    /* margin-top: 15px; */
+    margin-top: 10px;
     background-color:  #d8e2dc; 
     border-radius: 10px;
     height: 100%;
@@ -87,7 +87,7 @@ p{
 
 /* Responsiveness */
 
-@media screen and (max-width: 1310px){
+@media screen and (max-width: 1370px){
     .breakline{
         margin-top: 20px;
     }
@@ -96,7 +96,7 @@ p{
     }
 }
 
-@media screen and (max-width: 1230px){
+@media screen and (max-width: 1210px){
     /* main{
         height: 700px;
     } */
@@ -115,73 +115,21 @@ p{
         height: 450px;
         
     }
-    main{
+    section{
         flex-direction: column;
         height: auto;
     }
 }
 
-/* 
-@media screen and (max-width: 1200px){
-    main{
-        border-radius: 10px;
-        height: auto;
-        padding: 30px;
-    } 
-    .adina-img{
-        height: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
+@media screen and (max-width: 600px){
+    .img-wrapper{
+        height: 400px;
     }
-  }
+}
 
-  @media screen and (max-width: 860px){
-    .adina-img{
-        display: none;
-        height: 180px;
-    }
-    .sm-screen-img{
-        display: block;
-    }
-  }
-  @media screen and (max-width: 750px){
-    .first-part{
-        display:block;
-    }
-    .sm-screen-img{
-        display: none;
-    }
-
-    .smallest-screen-img{
-        display: block;
-        height: 150px;
-    }
-    .sm-screen-first-part{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  }
-
-  @media screen and (max-width: 610px){
-    .first-line{
-        padding-left: 40px;
-    }
-    .smallest-screen-img{
-        height: 120px;
-    }
-  }
-  @media screen and (max-width: 554px){
-    .first-line{
-        padding-left: 10px;
-    }
-  }
   @media screen and (max-width: 510px){
-    .first-line{
-        padding-left: 0px;
-    }
-    .smallest-screen-img{
-        height: 100px;
+    .img-wrapper{
+        height: 350px;
     }
     .breakline img{
         height: 20px;
@@ -191,21 +139,17 @@ p{
     }
   }
 
-  @media screen and (max-width: 445px){
-    main{
-        padding: 10px;
+  @media screen and (max-width: 400px){
+    .img-wrapper{
+        height: 270px;
     }
-    .smallest-screen-img{
-        display: none;
+    .breakline img{
+        height: 15px;
     }
-    .the-smallest-screen-img{
-        display: block;
-        height: 100px;
+}
+
+@media screen and (max-width: 360px){
+    .img-wrapper{
+        height: 230px;
     }
-    .the-smallest-screen-first-part{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-   
-  } */
+}

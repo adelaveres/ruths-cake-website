@@ -98,7 +98,7 @@ $(document).ready(function() {
 
             if(side_info_card.style.display == "block"){    
 
-                if(window.innerWidth < 550){
+                if(window.innerWidth <= 560){
                     left_arrow.style.display = "none";
                     right_arrow.style.display = "none";
                     down_open_arrow.style.display = "none";
@@ -113,7 +113,7 @@ $(document).ready(function() {
                 
             }
             else{
-                if(window.innerWidth < 550){
+                if(window.innerWidth <= 560){
                     left_arrow.style.display = "none";
                     right_arrow.style.display = "none";
                     down_open_arrow.style.display = "flex";

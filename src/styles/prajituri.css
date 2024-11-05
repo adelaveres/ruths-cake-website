@@ -221,25 +221,94 @@ section{
     cursor: pointer; 
 } */
 
+/* Responsiveness */
 
-@media screen and (min-width: 501px){
+@media screen and (max-width: 1505px){
+    /* .card{
+        display:flex;
+        justify-content: space-around;
+        margin: 10px 30px;
+    } */
+    .left-side-card{
+        height: 450px;
+    }
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 325px;
+        height: 325px;
+    }
+    section{
+        width: 100%;
+    }
+    .img-wrapper span{
+        line-height: 1.05;
+    }
+    .cake-title span div{
+        margin-top: 10px;
+        font-size: 0.7em;
+        font-weight: 450;
+    }
+    .side-info{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 1345px){
+    .left-side-card{
+        height: 425px;
+    }
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    
+    .card{
+        margin: 10px;
+    }
+    .left-side-card{
+        height: 400px;
+    }
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 280px;
+        height: 280px;
+    }
+    .breakline{
+        font-size: 1.5em;
+    }
+    .breakline span{
+        padding: 0 10px;
+        top:-5px;
+    }
+    .breakline img{
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    section{
+        padding-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 561px){
     .card{
         flex-direction: row;
         margin: 10px 20px;
     }
-    .side-info{
-        /* display: none; */
-        width: 150px;
-    }
     .left-side-card{
         border-radius: 10px;
     }
-    .down-arrow-btn{
-        display: none;
-    }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 560px){
 
     .card{
         flex-direction: column;
@@ -258,230 +327,80 @@ section{
     .side-arrow-btn{
         display: none;
     }
-    
-    
-
     .down-open-btn{
         display: flex;
     }
-
+    .card{
+        width: 280px;
+    }
+    .left-side-card{
+        height: 360px;
+        width: inherit;
+    }
     .side-info{
-        /* display: block; */
         width: inherit;
         border-radius: 0 0 10px 10px;
     }
+
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 250px;
+        height: 250px;
+    }
+    .img-wrapper span{
+        font-size: 2.1em;
+        font-weight: 700;
+        line-height: 1.05;
+    }
+
+
 }
 
-/* Responsiveness */
-/* 
-@media screen and (max-width: 1385px){
-
-    .img-wrapper{
-        width: 225px;
-        height: 225px;
+@media screen and (max-width: 400px){
+    .card{
+        width: 260px;
     }
-  }
-
-  @media screen and (max-width: 1300px){
-    .img-wrapper{
-        width: 210px;
-        height: 210px;
-    }
-  }
-
-  @media screen and (max-width: 1190px){
-
-    .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
-        justify-content: center;
+    .left-side-card{
+        height: 330px;
     }
     .img-wrapper{
-        margin-left: 40px;
-        margin-right: 40px;
+        margin: 5px;
+        padding: 10px;
+        width: 235px;
+        height: 235px;
     }
-  }
-
-  @media screen and (max-width: 1005px){
-    .sidebar-menu{
-        display: none;
+    .img-wrapper span{
+        font-size: 1.7em;
+        font-weight: 700;
+        line-height: 1;
     }
-    .img-wrapper{
-        margin: 20px;
-    }
-  }
-  @media screen and (max-width: 950px){
-
-    .img-wrapper{
-        width: 200px;
-        height: 200px;
-    }
-    .coming-soon-msg{
-        font-size: 3em;
-        left: 30%;
+    .side-info{
+        font-size:1em;
     }
 
-  }
-  @media screen and (max-width: 910px){
-
-   
-  }
-
-  @media screen and (max-width: 870px){
-    main{
-        width: 100%;
-        /* background-color: pink; 
-    }
-    
-   
-  }
-
-  @media screen and (max-width: 835px){
-    .img-wrapper{
-        width: 180px;
-        height: 180px;
-    }
-  }
-
-  @media screen and (max-width: 750px){
-    .img-wrapper{
-        width: 200px;
-        height: 200px;
-    }
-    .img-wrapper{
-        margin: 30px;
-    }
-  }
-
-  @media screen and (max-width: 640px){
-    .img-wrapper{
-        width: 180px;
-        height: 180px;
-    }
-  }
-
-  @media screen and (max-width: 595px){
-    .img-wrapper{
-        width: 150px;
-        height: 150px;
-    }
-    .breakline img{
-        height: 18px;
-    }
     .breakline{
         font-size: 1.3em;
-        margin: 20px;
     }
-    main{
-        width: 100%;
-    }
-    .cakes-grid{
-        padding-left: 0px;
-        width: 100%;
-    }
-    .coming-soon-msg{
-        font-size: 2em;
-        left: 30%;
-    }
-  }
-
-  @media screen and (max-width: 500px){
-    .img-wrapper{
-        width: 110px;
-        height: 110px;
-        margin: 10px;
+    .breakline span{
+        padding: 0 10px;
+        top:-5px;
     }
     .breakline img{
         height: 15px;
     }
+}
+
+@media screen and (max-width: 335px){
+
     .breakline{
         font-size: 1.2em;
-        margin: 20px;
     }
-  }
-
-  @media screen and (max-width: 445px){
-
-    .img-wrapper{
-        width: 100px;
-        height: 100px;
+    .breakline span{
+        padding: 0 10px;
+        top:-5px;
     }
-  }
-
-  @media screen and (max-width: 415px){
-    .img-wrapper{
-        width: 130px;
-        height: 130px;
-        margin: 15px;
+    .breakline img{
+        height: 13px;
     }
-    .coming-soon-msg{
-        font-size: 2em;
-        left: 20%;
-    }
-    main{
-        width: 100%;
-    }
-    body{
-        padding: 0;
-    }
-  }
-  @media screen and (max-width: 390px){
-    .img-wrapper{
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-    }
-  } */
-
-
-
-  /* .sidebar-menu{
-    width: 25%;
-    position: relative;
-    top: 50px;
 }
-
-.sidebar-item-box{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    min-width: 280px;
-    max-height: 120px;
-    text-align: center;
-    border-radius: 10px;
-
-}
-.sidebar-item-box:hover{
-    color: rgb(244, 111, 133);
-}
-.sidebar-item-box:hover a{
-    color: rgb(244, 111, 133);
-    box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
-    /* color: #f4acb7; 
-}
-
-
-.sidebar-item-box a{
-    text-decoration: none;
-    /* text-transform: uppercase; 
-    
-    color: #584e51;
-    font-family: "Cardo", serif;
-    font-size: 1.4em;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    
-
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-} */
-
-
-/* .coming-soon-msg{
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    font-size: 4em;
-    font-weight: 700;
-    color: rgba(0,0,0,0.4);
-    z-index: 1;
-} */

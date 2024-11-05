@@ -304,9 +304,6 @@ section{
     .left-side-card{
         border-radius: 10px;
     }
-    /* .down-arrow-btn{
-        display: none;
-    } */
 }
 
 @media screen and (max-width: 560px){

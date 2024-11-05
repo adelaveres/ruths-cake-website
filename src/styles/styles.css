@@ -27,143 +27,18 @@ body {
     
   }
 
-  .hamburger{
-    position: absolute;
-    top: 40px;
-    right: 0px;
-    cursor: pointer;
-    display: none;
+/* Responsiveness */
+
+@media screen and (max-width: 600px) {
+  main{
+    padding: 10px;
+    padding-top: 110px;
   }
+}
 
-  .hamburger .line{
-    display: block;
-    width: 45px;
-    height: 5px;
-    margin-bottom: 7px;
-    background-color: #3f383a;
-    border-radius: 10px;
+@media screen and (max-width: 600px) {
+  main{
+    padding-top: 100px;
   }
-
-  @media screen and (max-width: 1600px){
-    .menu-items-list{
-      padding-left: 150px;
-    }
-
-  }
-
-  @media screen and (max-width: 1500px){
-    .menu-items-list{
-      padding-left: 80px;
-
-    }
-    
-  }
-
-  @media screen and (max-width: 1400px){
-    .menu-social-btns{
-      display:none;
-    }
-    .menu-items-list{
-      padding-left: 150px;
-
-    }
-    
-  }
-
-  @media screen and (max-width: 1300px){
-    .menu-items-list{
-      padding-left: 80px;
-
-    }
-  }
-
-  @media screen and (max-width: 1200px){
-    .menu-items-list{
-      padding-left: 50px;
-
-    }
-  }
-
-  @media screen and (max-width: 1160px){
-    .menu-items-list{
-      display: none;
-    }
-    .hamburger{
-      display: block;
-    }
-  }
-
-
-  @media screen and (max-width: 800px){
-
-    .logo{
-      width: 350px;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media screen and (max-width: 600px){
-    .hamburger{
-      top: 43px;
-    }
-    .hamburger .line{
-      width: 35px;
-      height: 3.8px;
-      margin-bottom: 5px;
-    }
-    .logo{
-      width: 300px;
-      background-repeat: no-repeat;
-    }
-
-    .slideshow-container{
-      top: -110px;
-    }
-  }
-
-  @media screen and (max-width: 510px){
-   
-    .logo{
-      width: 250px;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media screen and (max-width: 420px){
-
-    .hamburger .line{
-      width: 30px;
-      height: 3.6px;
-      margin-bottom: 4.5px;
-    }
-    .logo{
-      width: 250px;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media screen and (max-width: 380px){
-    /* .hamburger{
-      right: 25px;
-    } */
-    .hamburger .line{
-      width: 27px;
-      height: 3.5px;
-      margin-bottom: 4.5px;
-    }
-    .logo{
-      width: 250px;
-      background-repeat: no-repeat;
-    }
-    main{
-      width: 100%;
-    }
-    body{
-      width: 100%;
-      padding: 0;
-    }
-    
-  }
-
-
+}
 

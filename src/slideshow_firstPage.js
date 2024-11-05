@@ -71,7 +71,7 @@ function showSlides() {
 function setInitialSlidePhotos(){
   
   
-  if(window.innerWidth < 600){
+  if(window.innerWidth <= 600){
     wedPhoto.src = "/images/slideshow/20230826_235904_2.jpg";
     cakesPhoto.src = "/images/slideshow/20240511_174947.jpg";
     candybarPhoto.src = "/images/slideshow/candybar_hero_photo.jpg";

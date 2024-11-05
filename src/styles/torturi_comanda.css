@@ -12,10 +12,12 @@ section{
 } 
 .card{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 10px 30px;
 }
 .left-side-card{
+    display: flex;
+    justify-content: center;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px 0 0 10px;
     height: 480px;
@@ -217,24 +219,97 @@ section{
 } */
 
 
-@media screen and (min-width: 501px){
+/* Responsiveness */
+
+@media screen and (max-width: 1505px){
+    /* .card{
+        display:flex;
+        justify-content: space-around;
+        margin: 10px 30px;
+    } */
+    .left-side-card{
+        height: 450px;
+    }
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 325px;
+        height: 325px;
+    }
+    section{
+        width: 100%;
+    }
+    .img-wrapper span{
+        line-height: 1.05;
+    }
+    .cake-title span div{
+        margin-top: 10px;
+        font-size: 0.7em;
+        font-weight: 450;
+    }
+    .side-info{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 1345px){
+    .left-side-card{
+        height: 425px;
+    }
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    
+    .card{
+        margin: 10px;
+    }
+    .left-side-card{
+        height: 400px;
+    }
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 280px;
+        height: 280px;
+    }
+    .breakline{
+        font-size: 1.5em;
+    }
+    .breakline span{
+        padding: 0 10px;
+        top:-5px;
+    }
+    .breakline img{
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    section{
+        padding-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 561px){
     .card{
         flex-direction: row;
         margin: 10px 20px;
     }
-    .side-info{
-        /* display: none; */
-        width: 150px;
-    }
     .left-side-card{
         border-radius: 10px;
     }
-    .down-arrow-btn{
+    /* .down-arrow-btn{
         display: none;
-    }
+    } */
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 560px){
 
     .card{
         flex-direction: column;
@@ -253,16 +328,58 @@ section{
     .side-arrow-btn{
         display: none;
     }
-    
-    
-
     .down-open-btn{
         display: flex;
     }
-
+    .card{
+        width: 280px;
+    }
+    .left-side-card{
+        height: 360px;
+        width: inherit;
+    }
     .side-info{
-        /* display: block; */
         width: inherit;
         border-radius: 0 0 10px 10px;
     }
+
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 250px;
+        height: 250px;
+    }
+    .img-wrapper span{
+        font-size: 2.1em;
+        font-weight: 700;
+        line-height: 1.05;
+    }
+    #torturi_comanda{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 260px;
+    }
+    .left-side-card{
+        height: 330px;
+    }
+    .img-wrapper{
+        margin: 5px;
+        padding: 10px;
+        width: 235px;
+        height: 235px;
+    }
+    .img-wrapper span{
+        font-size: 1.7em;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .side-info{
+        font-size:1em;
+    }
+
 }

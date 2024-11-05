@@ -1,6 +1,6 @@
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide-item");
-let dots = document.getElementsByClassName("dot");
+// let dots = document.getElementsByClassName("dot");
 showSlides();
 window.addEventListener('resize', handleResizeScreen);
 let wedPhoto = document.getElementById("wed-img");
@@ -33,11 +33,11 @@ nextBtn.addEventListener('click', ()=>{
 });
 
 //Add dots listeners
-for (let i = 0; i < dots.length; i++){
-  dots[i].addEventListener('click',()=>{
-    currentSlide(i+1);
-  });
-}
+// for (let i = 0; i < dots.length; i++){
+//   dots[i].addEventListener('click',()=>{
+//     currentSlide(i+1);
+//   });
+// }
 
 function showSlide(n) {
   let i; 
@@ -46,9 +46,9 @@ function showSlide(n) {
     slides[i].style.display = "none";
   }
   //Deactivate all dots
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
   
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -56,7 +56,7 @@ function showSlide(n) {
   // slides[slideIndex-1].style.display = "block";
   let currentSlide = slides[slideIndex-1];
   $(currentSlide).fadeIn(2000).delay(3200).fadeOut(800);
-  dots[slideIndex-1].className += " active";
+  // dots[slideIndex-1].className += " active";
 
 }
 

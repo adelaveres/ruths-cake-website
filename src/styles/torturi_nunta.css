@@ -15,7 +15,6 @@ section{
     height: inherit;
     padding: 0px 20px;
     border-radius: 10px;
-    /* top: -50px; */
 }
 #torturi-nunta-info{
     color: #584e51;
@@ -23,6 +22,9 @@ section{
 }
 #torturi-nunta-info p{
     text-indent: 20px;
+}
+#torturi-nunta-info span{
+    text-align: center;
 }
 strong{
     font-family: "Josefin Sans", sans-serif;
@@ -39,7 +41,7 @@ strong{
     font-weight: 330;
     font-size: 1.6em;
     font-style: normal;
-    margin: 25px 30px;
+    margin: 10px auto;
     margin-bottom: 20px;
 }
 .breakline span{
@@ -174,8 +176,10 @@ strong{
     }
     
 }
-@media screen and (max-width: 1155px){
-    
+@media screen and (max-width: 1160px){
+    .slideshow-container{
+        width: 500px;
+    }
     .breakline span{
         padding: 0 13px;
     }
@@ -239,11 +243,22 @@ strong{
     }
     .slideshow-container{
         margin: 0px;
-        padding: 0 px;
+        padding: 0px;
         height: 400px;
     }
     #torturi-nunta-info{
         padding: 10px;
         padding-top: 20px;
+    }
+}
+@media screen and (max-width: 346px){
+    .breakline img{
+        height: 13px;
+    }
+    .breakline span{
+        padding: 0 4px;
+    }
+    .breakline{
+        font-size: 1.3em;
     }
 }

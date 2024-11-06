@@ -1,16 +1,17 @@
 section{
     /* width: 95%; */
-    margin: 0 auto;
-    height: 680px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    height: 100%;
+    width: 95%;
 }
 
 .side{
     height:inherit;
     padding: 0px 20px;
     border-radius: 10px;
-    /* top: -50px; */
 }
 
 
@@ -22,7 +23,7 @@ section{
     font-weight: 330;
     font-size: 1.6em;
     font-style: normal;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 .breakline span{
     padding: 0 15px;
@@ -33,21 +34,25 @@ section{
     height: 25px;
 }
 .candybar-info{
+
+    color: #584e51;
     overflow-y: scroll;
 }
 .candybar-info p{
     text-indent: 20px;
 }
+.candybar-info span{
+    text-align: center;
+}
+
 
 /* Candybar slideshow */
 
 .slideshow-container{
     max-width: 100%;
-    width: 650px;
-    height: 680px;
+    width: 600px;
+    height: inherit;
     position: relative;
-    margin: 20px;
-    top: -20px;
     overflow: hidden; 
     border-radius: 10px;
     /* background-color: #d8e2dc; */
@@ -80,7 +85,9 @@ section{
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
+#candybar-prevBtn{
+    left: 0;
+}
 #candybar-nextBtn{
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -113,16 +120,14 @@ section{
 }
 @keyframes zoom {
     from {scale: 1;}
-    to {scale: 1.15;}
+    to {scale: 1.1;}
 }
 
 
 /* Responsiveness */
 
 @media screen and (max-width: 1340px){
-    .section{
-        padding: 0px 20px;
-    }
+
     .breakline{
         font-size: 1.4em;
     }
@@ -135,23 +140,15 @@ section{
     }
     
 }
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 1215px){
+    .slideshow-container{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 1160px){
     .slideshow-container{
         width: 500px;
-        height: 600px;
     }
-    main{
-        top: -110px;
-    }
-}
-@media screen and (max-width: 1200px){
-    .slideshow-container{
-        width: 450px;
-        height: 600px;
-    }
-}
-@media screen and (max-width: 1155px){
-    
     .breakline span{
         padding: 0 13px;
     }
@@ -179,6 +176,7 @@ section{
         line-height: 1.2;
     }
 }
+
 @media screen and (max-width: 1025px){
     .breakline{
         margin-left: 10px;
@@ -188,9 +186,14 @@ section{
         padding: 0 8px;
     }
 }
+@media screen and (max-width: 1010px){
+    .slideshow-container{
+        width: 450px;
+    }
+}
 
 @media screen and (max-width: 995px){
-    main{
+    section{
         display: block;
         width: 100%;
         height: auto;
@@ -216,11 +219,29 @@ section{
     }
     .slideshow-container{
         margin: 0px;
-        padding: 0 px;
+        padding: 0px;
         height: 400px;
     }
     .candybar-info{
         padding: 10px;
         padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .breakline img{
+        height: 14px;
+    }
+}
+
+@media screen and (max-width: 346px){
+    .breakline img{
+        height: 13px;
+    }
+    .breakline span{
+        padding: 0 4px;
+    }
+    .breakline{
+        font-size: 1.3em;
     }
 }

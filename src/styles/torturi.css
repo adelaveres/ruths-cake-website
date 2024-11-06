@@ -10,16 +10,16 @@ section{
     flex-wrap: wrap;
     /* align-items: center; */
     justify-content: space-around;
-    /* overflow: hidden;  */
 }
 
 .card{
-    /* display:flex;
-    justify-content: space-around; */
     margin: 10px;
 }
 
 .img-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     margin: 5px;
     width: 450px;
     height: 450px;
@@ -49,18 +49,12 @@ section{
 
 .img-wrapper span{
     position: absolute;
-    top: 220px;
-    left: 35px;
     color: white;
     font-size: 3em;
     font-weight: 700;
     text-shadow: 1px 1px 5px grey;
 }
 
-
-#gallery_span{
-    left: 80px;
-}
 
 /* Responsiveness */
 @media screen and (max-width: 1300px){
@@ -77,9 +71,7 @@ section{
         padding-top: 60px;
     }
     .img-wrapper span{
-        top: 180px;
-        /* left: 35px; */
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
 }
 @media screen and (max-width: 915px){
@@ -97,14 +89,8 @@ section{
         height: 330px;
     }
     .img-wrapper span{
-        top: 150px;
-        left: 15px;
-        font-size: 2.5em;
-        font-weight: 600;
-    }
-    #gallery_span{
-        left: 55px;
-    }
+        font-size: 2.55em;
+    } 
 }
 
 
@@ -118,19 +104,8 @@ section{
         height: 280px;
     }
     .img-wrapper span{
-        top: 135px;
-        left: 30px;
-        font-size: 1.8em;
+        font-size: 2.3em;
         font-weight: 600;
-    }
-    /* .img-wrapper span{
-        top: 135px;
-        left: 8px;
-        font-size: 2.35em;
-        font-weight: 600;
-    } */
-    #gallery_span{
-        left: 60px;
     }
 }
 
@@ -141,145 +116,8 @@ section{
         height: 250px;
     }
     .img-wrapper span{
-        top: 120px;
-        left: 25px;
-        font-size: 1.7em;
-        font-weight: 550;
-    }
-    #gallery_span{
-        left: 50px;
+        font-size: 2em;
+        font-weight: 600;
     }
 }
 
-
-/* 
-  @media screen and (max-width: 1385px){
-
-    .img-wrapper{
-        width: 225px;
-        height: 225px;
-    }
-  }
-
-  @media screen and (max-width: 1300px){
-    .img-wrapper{
-        width: 210px;
-        height: 210px;
-    }
-  }
-
-  @media screen and (max-width: 1190px){
-
-    .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
-        justify-content: center;
-    }
-    .img-wrapper{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-  }
-
-  @media screen and (max-width: 1005px){
-    .sidebar-menu{
-        display: none;
-    }
-    .img-wrapper{
-        margin: 20px;
-    }
-  }
-  @media screen and (max-width: 950px){
-
-    .img-wrapper{
-        width: 200px;
-        height: 200px;
-    }
-  }
-  @media screen and (max-width: 910px){
-
-   
-  }
-
-  @media screen and (max-width: 870px){
-    main{
-        width: 100%;
-        /* background-color: pink; 
-    }
-    
-   
-  }
-
-  @media screen and (max-width: 835px){
-    .img-wrapper{
-        width: 180px;
-        height: 180px;
-    }
-  }
-
-  @media screen and (max-width: 750px){
-    .img-wrapper{
-        width: 200px;
-        height: 200px;
-    }
-    .img-wrapper{
-        margin: 30px;
-    }
-  }
-
-  @media screen and (max-width: 605px){
-    .img-wrapper{
-        width: 180px;
-        height: 180px;
-    }
-  }
-
-  @media screen and (max-width: 563px){
-    .img-wrapper{
-        width: 150px;
-        height: 150px;
-    }
-    .breakline img{
-        height: 15px;
-    }
-    .breakline{
-        font-size: 1.2em;
-        margin: 20px;
-    }
-    main{
-        width: 100%;
-    }
-    .cakes-grid{
-        padding-left: 0px;
-        width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 500px){
-    .img-wrapper{
-        width: 110px;
-        height: 110px;
-        margin: 10px;
-    }
-  }
-
-  @media screen and (max-width: 445px){
-
-    .img-wrapper{
-        width: 100px;
-        height: 100px;
-    }
-  }
-
-  @media screen and (max-width: 415px){
-    .img-wrapper{
-        width: 130px;
-        height: 130px;
-        margin: 15px;
-    }
-  }
-  @media screen and (max-width: 375px){
-    .img-wrapper{
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-    }
-  } */

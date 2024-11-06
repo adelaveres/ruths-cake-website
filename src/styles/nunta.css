@@ -4,24 +4,26 @@ section{
     padding-top: 30px;
 }
 #cards-wrapper{
+    
     display:flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-around;
-    overflow: hidden; 
 }
 .card{
     margin: 10px;
 }
 
 .img-wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     margin: 5px;
-    width: 450px;
+    width: 450px; 
     height: 450px;
     position: relative;
     cursor: pointer;
 }
 .img-wrapper img{
-    /* margin: 30px; */
     border-radius: 50%;
     max-width: 100%;
     width: 100%;
@@ -39,47 +41,17 @@ section{
 }
 
 .hover-effect:hover span{
+    
     color: #584e51;
     transition: 0.5s;
 }
 
 .img-wrapper span{
     position: absolute;
-    top: 220px;
-    left: 40px;
     color: white;
     font-size: 3em;
     font-weight: 700;
     text-shadow: 1px 1px 5px grey;
-}
-
-#candybar-card span{
-    left: 110px;
-}
-
-#marturii-card span{
-    left: 135px;
-}
-
-
-.breakline{
-    display: flex;
-    justify-content: center;
-    color: #584e51;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 330;
-    font-size: 1.6em;
-    font-style: normal;
-    margin: 25px 30px;
-    margin-bottom: 20px;
-}
-.breakline span{
-    padding: 0 15px;
-    position: relative;
-    top:-5px;
-}
-.breakline img{
-    height: 25px;
 }
 
 /* Offer button */
@@ -120,170 +92,58 @@ section{
 }
 
 /* Responsiveness */
-
 @media screen and (max-width: 1545px){
     .img-wrapper{
-        margin: 5px;
-        width: 400px;
-        height: 400px;
-        padding: 25px;
-    }
-    .img-wrapper span{
-        top: 200px;
-    }
-}
-@media screen and (max-width: 1380px){
-    .img-wrapper{
-        margin: 5px;
         width: 380px;
         height: 380px;
-        padding: 20px;
     }
-    
+    .img-wrapper span{
+        font-size: 2.8em;
+    }
 }
-@media screen and (max-width: 1325px){
+
+@media screen and (max-width: 1300px){
     .img-wrapper{
-        margin: 5px;
         width: 350px;
         height: 350px;
-        padding: 20px;
     }
     .img-wrapper span{
-        top: 180px;
-        left: 50px;
-    }
-    #candybar-card span{
-        left: 100px;
-    }
-    
-    #marturii-card span{
-        left: 115px;
-    }
-}
-@media screen and (max-width: 1215px){
-    #cards-wrapper{
-        flex-wrap: wrap;
-    }   
-    .img-wrapper{
-        padding: 10px;
-    }
-}
-@media screen and (max-width: 830px){
-    .img-wrapper{
-        margin: 5px;
-        width: 340px;
-        height: 340px;
-        padding: 20px;
-    }
-    .img-wrapper span{
-        top: 160px;
-        left: 40px;
-    }
-    #candybar-card span{
-        left: 90px;
-    }
-    
-    #marturii-card span{
-        left: 100px;
-    }
-}
-@media screen and (max-width: 800px){
-    .img-wrapper{
-        margin: 5px;
-        width: 280px;
-        height: 280px;
-        padding: 5px;
-    }
-    .img-wrapper span{
-        top: 130px;
-        left: 20px;
-        font-size: 2em;
-        font-weight: 600;
-    }
-    #candybar-card span{
-        left: 65px;
-    }
-    
-    #marturii-card span{
-        left: 80px;
-    }
-}
-@media screen and (max-width: 670px){
-    .img-wrapper{
-        width: 250px;
-        height: 250px;
-    }
-    .img-wrapper span{
-        top: 115px;
-        left: 50px;
-        font-size: 2em;
-        font-weight: 600;
-    }
-    #candybar-card span{
-        left: 50px;
-    }
-    
-    #marturii-card span{
-        left: 60px;
-    }
-    .offer-btn{
-        width: 300px;
+        font-size: 2.7em;
     }
 }
 
-@media screen and (max-width: 610px){
+
+@media screen and (max-width: 600px){
     .img-wrapper{
-        width: 300px;
-        height: 300px;
+        width: 330px;
+        height: 330px;
     }
     .img-wrapper span{
-        top: 145px;
-        left: 35px;
+        font-size: 2.55em;
     }
-    #candybar-card span{
-        left: 75px;
-    }
-    
-    #marturii-card span{
-        left: 85px;
-    }
-
 }
 @media screen and (max-width: 510px){
+    section{
+        padding-top: 10px;
+    }
     .img-wrapper{
         width: 280px;
         height: 280px;
     }
     .img-wrapper span{
-        top: 135px;
-        left: 30px;
-        font-size: 1.8em;
+        font-size: 2.3em;
         font-weight: 600;
     }
-    #candybar-card span{
-        left: 70px;
-    }
-    
-    #marturii-card span{
-        left: 80px;
-    }
 }
+
 @media screen and (max-width: 420px){
     .img-wrapper{
         width: 250px;
         height: 250px;
     }
     .img-wrapper span{
-        top: 125px;
-        left: 25px;
-        font-size: 1.7em;
-        font-weight: 550;
-    }
-    #candybar-card span{
-        left: 60px;
-    }
-    
-    #marturii-card span{
-        left: 70px;
+        font-size: 2em;
+        font-weight: 600;
     }
 }
+

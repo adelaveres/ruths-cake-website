@@ -1,14 +1,16 @@
 section{
     /* width: 95%; */
-    margin: 0 auto;
-    height: 680px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 95%;
 }
-
+ 
 .side{
     height:inherit;
-    padding: 20px;
+    padding: 0 20px;
     border-radius: 10px;
     /* top: -50px; */
 }
@@ -22,6 +24,7 @@ section{
     object-fit: cover;  
 }
 .marturii-info {
+    color: #584e51;
     padding: 10px;
     margin-left: 20px;
 }
@@ -40,7 +43,7 @@ section{
     font-weight: 330;
     font-size: 1.6em;
     font-style: normal;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 .breakline span{
     padding: 0 15px;
@@ -54,10 +57,8 @@ section{
 .marturii-photos .img-wrapper{
     max-width: 100%;
     width: 600px;
-    height: auto;
+    height: inherit;
     position: relative;
-    margin: 0 auto;
-    top: -20px;
     overflow: hidden; 
     border-radius: 10px;
     /* background-color: #d8e2dc; */
@@ -86,7 +87,7 @@ section{
         width: 600px;
         height: auto;
     }
-    main{
+    section{
         top: -90px;
     }
 }
@@ -102,8 +103,11 @@ section{
     .marturii-photos{
         width: 550px;
     }
+    .marturii-info {
+        padding-top: 30px;
+    }
     .breakline{
-        margin: 20px 7px;
+        /* margin: 20px 7px; */
         margin-bottom: 20px;
     }
     .breakline span{
@@ -114,9 +118,9 @@ section{
     }
 }
 @media screen and (max-width: 1080px){
-    .breakline{
+    /* .breakline{
         margin: 20px;
-    }
+    } */
     .breakline span{
         text-align: center;
         line-height: 1.2;
@@ -133,7 +137,7 @@ section{
 }
 
 @media screen and (max-width: 995px){
-    main{
+    section{
         display: block;
         width: 100%;
         height: auto;
@@ -155,7 +159,7 @@ section{
 }
 @media screen and (max-width: 700px){
     .marturii-photos .img-wrapper{
-        width: 400px;
+        /* width: 400px; */
         padding: 0;
         margin: 0 auto;
     }
@@ -168,7 +172,10 @@ section{
     }
 }
 @media screen and (max-width: 520px){
-    main{
+    .marturii-photos .img-wrapper{
+        width: 450px;
+    }
+    section{
         width:100%;
     }
     body{

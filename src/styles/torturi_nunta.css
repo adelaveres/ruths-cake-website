@@ -97,6 +97,9 @@ strong{
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
+#wed-cake-prevBtn{
+    left: 0;
+}
 
 #wed-cake-nextBtn{
     right: 0;
@@ -158,9 +161,7 @@ strong{
 /* Responsiveness */
 
 @media screen and (max-width: 1340px){
-    /* .section{
-        padding: 0px 20px;
-    } */
+
     .breakline{
         font-size: 1.4em;
     }
@@ -171,12 +172,6 @@ strong{
         margin: 25px 10px;
         margin-bottom: 20px;
     }
-    
-}
-@media screen and (max-width: 1320px){
-
-}
-@media screen and (max-width: 1200px){
     
 }
 @media screen and (max-width: 1155px){

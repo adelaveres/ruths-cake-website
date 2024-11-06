@@ -42,7 +42,7 @@ function showSlideCakes(n) {
 function showSlidesCakes() {
   slideIndexTorturi++;
   showSlideCakes(slideIndexTorturi);
-  setTimeout(showSlidesCakes, 3800);
+  setTimeout(showSlidesCakes, 4500);
    
 }
 

@@ -2,6 +2,8 @@ section{
     /* width: 95%; */
     margin: 0 auto;
     color: #584e51;
+    height: 100%;
+    padding-top: 10px;
 }
 
 .cards-wrapper{
@@ -10,7 +12,8 @@ section{
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: inherit;
+    /* height: auto; */
+    height: 580px;
 }
 .card{
     width: 450px;
@@ -70,6 +73,7 @@ p{
 }
 
 .info-offers{
+
     text-align: center;
 }
 
@@ -132,7 +136,6 @@ p{
     .card:hover{
         box-shadow: 0px 8px 16px 0px rgba(216, 226, 220, 1.3);
     }
-
     
 }
 
@@ -213,9 +216,10 @@ p{
 @media screen and (max-width: 1020px){
     .cards-wrapper{
         width: 660px;
+        
         margin: 0 auto;
     }
-    main{
+    section{
         top: -100px;
     }
 
@@ -262,7 +266,7 @@ p{
 }
 
 @media screen and (max-width: 620px){
-    main{
+    section{
         width: 98%;
     }
     .card{
@@ -328,7 +332,7 @@ p{
         width: 99%;
         padding: 0;
     }
-    main{
+    section{
         width: 100%;
     }
     .card{
@@ -339,6 +343,7 @@ p{
     .cards-wrapper{
         width: 350px;
         margin: 0 auto;
+        height: 480px;
     }
     section ul{
         font-size: 1em;

@@ -1,4 +1,4 @@
-section{
+section{ 
     height: 100%;
     margin: 0 auto;
     width: 100%;
@@ -134,29 +134,17 @@ section{
 
 /* Responsiveness */
 
-  @media screen and (max-width: 1385px){
-
-    .img-wrapper{
-        width: 225px;
-        height: 225px;
-    }
-  }
-
   @media screen and (max-width: 1300px){
     .img-wrapper{
-        width: 210px;
-        height: 210px;
+        width: 280px;
+        height: 280px;
     }
   }
 
-  @media screen and (max-width: 1190px){
-
-    .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
-        justify-content: center;
-    }
+  @media screen and (max-width: 1110px){
     .img-wrapper{
-        margin-left: 40px;
-        margin-right: 40px;
+        width: 250px;
+        height: 250px;
     }
   }
 
@@ -171,52 +159,53 @@ section{
   @media screen and (max-width: 950px){
 
     .img-wrapper{
-        width: 200px;
-        height: 200px;
+        width: 230px;
+        height: 230px;
     }
   }
-  @media screen and (max-width: 910px){
-
-   
-  }
-
   @media screen and (max-width: 870px){
     main{
         width: 100%;
+        padding: 0;
+        padding-top: 140px;
         /* background-color: pink; */
     }
-    
-   
   }
 
-  @media screen and (max-width: 835px){
+  @media screen and (max-width: 850px){
+
     .img-wrapper{
-        width: 180px;
-        height: 180px;
+        width: 210px;
+        height: 210px;
     }
   }
 
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 800px){
+
     .img-wrapper{
-        width: 200px;
-        height: 200px;
-    }
-    .img-wrapper{
-        margin: 30px;
+        width: 190px;
+        height: 190px;
     }
   }
 
-  @media screen and (max-width: 605px){
+  @media screen and (max-width: 730px){
     .img-wrapper{
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 620px){
+    .img-wrapper{
+        width: 220px;
+        height: 220px;
     }
   }
 
   @media screen and (max-width: 563px){
     .img-wrapper{
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
     .breakline img{
         height: 15px;
@@ -224,6 +213,9 @@ section{
     .breakline{
         font-size: 1.2em;
         margin: 20px;
+    }
+    .breakline:first-child{
+        margin-top: 0px;
     }
     main{
         width: 100%;
@@ -234,33 +226,39 @@ section{
     }
   }
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 525px){
     .img-wrapper{
-        width: 110px;
-        height: 110px;
+        width: 180px;
+        height: 180px;
         margin: 10px;
     }
-  }
-
-  @media screen and (max-width: 445px){
-
-    .img-wrapper{
-        width: 100px;
-        height: 100px;
+    main{
+        padding-top: 120px;
+    }
+    .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
+        margin: 0 10px;
     }
   }
 
-  @media screen and (max-width: 415px){
+  @media screen and (max-width: 450px){
+
+    .img-wrapper{
+        width: 150px;
+        height: 150px;
+    }
+    main{
+        padding-top: 110px;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .img-wrapper{
+        margin: 7px;
+    }
+  }
+  @media screen and (max-width: 360px){
     .img-wrapper{
         width: 130px;
         height: 130px;
-        margin: 15px;
-    }
-  }
-  @media screen and (max-width: 375px){
-    .img-wrapper{
-        width: 120px;
-        height: 120px;
-        margin: 10px;
     }
   }

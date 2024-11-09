@@ -1,0 +1,49 @@
+---
+import "leaflet/dist/leaflet.css"; // Import Leaflet styles
+
+//Set default map options and allow customization through props
+
+const { lat = 47.800600, lng = 22.905210, zoom = 15 } = Astro.props;
+---
+
+<!-- Pass lat, lng, and zoom as data attributes on the map div  -->
+<div 
+  id="map" 
+  style="height: 100%; 
+  width: 100%;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 10px;"
+  data-lat={lat}
+  data-lng={lng}
+  data-zoom={zoom}
+></div>
+
+<script>
+  import L from "leaflet"; // Import Leaflet
+
+  // Initialize map function
+  function initMap() {
+     // Access the map div and retrieve data attributes
+    const mapElement = document.getElementById("map");
+    const lat = parseFloat(mapElement.getAttribute("data-lat"));
+    const lng = parseFloat(mapElement.getAttribute("data-lng"));
+    const zoom = parseInt(mapElement.getAttribute("data-zoom"), 10);
+
+    // Initialize the map using the retrieved values
+    const map = L.map("map").setView([lat, lng], zoom);
+    
+    // Use OpenStreetMap tiles
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    // Add a marker to the specified location
+    L.marker([lat, lng]).addTo(map)
+      .bindPopup("Ruth's Cake - Cakeshop")
+      .openPopup();
+  }
+
+  // Run the map initialization after the component is mounted
+  initMap();
+</script>

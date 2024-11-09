@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
+import Map from '../components/Map.astro';
 import '../styles/contact.css';
 ---
 <BaseLayout>
-	<main>
+	<section>
 		<div class="google-map">
+			<Map/>
 			<!-- <img src="/images/location_ruths_cake.PNG" alt="Location"> -->
 		</div>
 
@@ -14,21 +16,32 @@ import '../styles/contact.css';
 			
 			<p>
 				<i class="fa fa-phone" aria-hidden="true"></i>
-				- 0743820693</p>
+				- 0743 820 693</p>
 			<p>
 				<i class="fa fa-clock-o" aria-hidden="true"></i>
-				- L-S 8:00-18:00</p>
+				- L: &nbspÎnchis <br>
+				&nbsp &nbsp  M: &nbsp&nbsp08 - 16 <br>
+				&nbsp &nbsp  Mi:&nbsp&nbsp08 - 16 <br>
+				&nbsp &nbsp  J: &nbsp &nbsp 08 - 16 <br>
+				&nbsp &nbsp  Vi: &nbsp  08 - 16 <br>
+				&nbsp &nbsp  S: &nbsp &nbsp09 - 12 <br>
+				&nbsp &nbsp  D: &nbsp &nbspÎnchis
+			</p>
 			<p> 
-				<i class="fa fa-map-marker" aria-hidden="true"></i>
-				- Str. Botizului 43, Satu Mare 440101</p>
+				<a href="https://g.co/kgs/uvYNNg3" class="social-btn fa fa-map-marker"></a>
+				- Str. Botizului 43, Satu Mare 440101
+
+			</p>
 			<p>
 				<a href="https://www.facebook.com/RuthsCake" class="fa fa-facebook social-btn"></a> 
-				,
+				<br>
 				<a href="https://www.instagram.com/ruth.cake_?igsh=dHZ1MzJ5anhkenEy" class="fa fa-instagram social-btn"></a>
+				
+				
 			</p>
 			<!-- <p>Contract: <a href="#">document_contract.pdf</a></p> -->
 		</div>
 		
 
-	</main>
+	</section>
 </BaseLayout>

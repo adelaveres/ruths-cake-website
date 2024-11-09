@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-
+  
 $(document).ready(function() {
     let anivPhotos = Array.from($(".torturi-aniversare").find(".img-wrapper"));
     let baptPhotos = Array.from($(".torturi-botez").find(".img-wrapper"));

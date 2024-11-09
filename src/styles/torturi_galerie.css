@@ -6,12 +6,7 @@ section{
 
 .cakes-grid{
     overflow-y: auto;
-    /* padding-left: 25px;
-    position: relative; */
-    top: -20px;
     height: 100%;
-    /* height: 600px; */
-    
 }
 .torturi-aniversare, .torturi-botez, .torturi-majorate, .torturi-caserola{
     /* background-color: #d8e2dc; */
@@ -76,8 +71,7 @@ section{
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    /* padding-top: 10px; */
+    z-index: 100;
     left:0;
     top:0;
     width: 100%;
@@ -107,12 +101,12 @@ section{
 }
 
 
-.close:hover,
+/* .close:hover,
 .close:focus {
   color:  pink;
-  /* text-decoration: none;
-  cursor: pointer; */
-}
+  text-decoration: none;
+  cursor: pointer; 
+}*/
 
 
 .breakline{

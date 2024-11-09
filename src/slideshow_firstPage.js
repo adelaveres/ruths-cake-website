@@ -55,7 +55,7 @@ function showSlide(n) {
 
   // slides[slideIndex-1].style.display = "block";
   let currentSlide = slides[slideIndex-1];
-  $(currentSlide).fadeIn(2000).delay(3200).fadeOut(800);
+  $(currentSlide).fadeIn(1000).delay(4500).fadeOut(1000);
   // dots[slideIndex-1].className += " active";
 
 }

@@ -98,7 +98,7 @@
 
 .zoom-in{
     animation-name: zoom;
-    animation-duration: 10s;
+    animation-duration: 16s;
     
 }
 @keyframes zoom {

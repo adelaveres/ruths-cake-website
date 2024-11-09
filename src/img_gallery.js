@@ -10,7 +10,7 @@ $(document).ready(function() {
     addEventListenerToElements(baptPhotos);
     addEventListenerToElements(majPhotos);
     addEventListenerToElements(casPhotos);
-
+ 
 
     function addEventListenerToElements (elements){
 

@@ -168,13 +168,13 @@ section{
 /* MODAL WINDOW */
 
 .modal img{
-    position: absolute;
-    top: 8%;
+    
     border-radius: 10px;
     object-fit: contain;
     margin: auto;
     display: block;
-    max-width: 400px;
+    max-width: 700px;
+  /* width: 80%;  */
 }
 .modal img:hover{
     opacity: 1;
@@ -186,8 +186,8 @@ section{
     z-index: 100;
     left:0;
     top:0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: auto;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
@@ -264,6 +264,20 @@ section{
         height: 300px;
     }
 }
+@media screen and (max-width: 750px){
+    .modal{
+        /* display: flex; */
+        align-items: center;
+    }
+    .modal img{
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 650px){
+    .modal img{
+        max-width: 550px;
+    }
+}
 
 @media screen and (max-width: 630px){
     
@@ -288,6 +302,9 @@ section{
     }
     .breakline img{
         height: 20px;
+    }
+    .modal img{
+        max-width: 480px;
     }
 }
 
@@ -359,6 +376,12 @@ section{
 
 }
 
+@media screen and (max-width: 500px){
+    .modal img{
+        max-width: 400px;
+    }
+}
+
 @media screen and (max-width: 400px){
     .card{
         width: 260px;
@@ -380,5 +403,14 @@ section{
     .side-info{
         font-size:1em;
     }
+    .modal img{
+        max-width: 350px;
+    }
 
+}
+
+@media screen and (max-width: 350px){
+    .modal img{
+        max-width: 300px;
+    }
 }

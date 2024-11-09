@@ -47,7 +47,7 @@ $(document).ready(function() {
             photoWrapper.addEventListener('click', ()=>{
                 // Open Modal
                 modalPhoto.src = currPhotoSrc;
-                modal.style.display = 'block';
+                modal.style.display = 'flex';
                 console.log("photo clicked");
 
             });

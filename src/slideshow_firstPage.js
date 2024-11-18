@@ -55,7 +55,7 @@ function showSlide(n) {
 
   // slides[slideIndex-1].style.display = "block";
   let currentSlide = slides[slideIndex-1];
-  $(currentSlide).fadeIn(1000).delay(4500).fadeOut(1000);
+  $(currentSlide).fadeIn(800).delay(3100).fadeOut(800);
   // dots[slideIndex-1].className += " active";
 
 }
@@ -63,7 +63,7 @@ function showSlide(n) {
 function showSlides() {
   slideIndex++;
   showSlide(slideIndex);
-  setTimeout(showSlides, 6000);
+  setTimeout(showSlides, 4700);
   
   
 }
@@ -72,11 +72,11 @@ function setInitialSlidePhotos(){
   
   
   if(window.innerWidth <= 600){
-    wedPhoto.src = "/images/slideshow/20230826_235904_2.jpg";
-    cakesPhoto.src = "/images/slideshow/20240511_174947.jpg";
-    candybarPhoto.src = "/images/slideshow/candybar_hero_photo.jpg";
-    annivPhoto.src = "/images/slideshow/20220804_232443.jpg";
-    specialPhoto.src = "/images/slideshow/20240621_083605.jpg";
+    wedPhoto.src = "/images/slideshow/wed_cake_slideshow.jpeg";
+    cakesPhoto.src = "/images/slideshow/wed_cake_example_slideshow_cut.jpeg";
+    candybarPhoto.src = "/images/slideshow/candybar_slideshow_cut.jpeg";
+    annivPhoto.src = "/images/slideshow/tort_ursulet_artificii.jpeg";
+    specialPhoto.src = "/images/slideshow/special_cakes_cut.jpg";
   }else
   if(window.innerWidth < 840){
     cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";
@@ -94,11 +94,11 @@ function handleResizeScreen(){
 
   if(window.innerWidth < 600){
     
-    wedPhoto.src = "/images/slideshow/20230826_235904_2.jpg";
-    cakesPhoto.src = "/images/slideshow/20240511_174947.jpg";
-    candybarPhoto.src = "/images/slideshow/candybar_hero_photo.jpg";
-    annivPhoto.src = "/images/slideshow/20220804_232443.jpg";
-    specialPhoto.src = "/images/slideshow/20240621_083605.jpg";
+    wedPhoto.src = "/images/slideshow/wed_cake_slideshow.jpeg";
+    cakesPhoto.src = "/images/slideshow/wed_cake_example_slideshow_cut.jpeg";
+    candybarPhoto.src = "/images/slideshow/candybar_slideshow_cut.jpeg";
+    annivPhoto.src = "/images/slideshow/tort_ursulet_artificii.jpeg";
+    specialPhoto.src = "/images/slideshow/special_cakes_cut.jpg";
   
   }else
   if(window.innerWidth < 840){

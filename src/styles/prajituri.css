@@ -174,7 +174,8 @@ section{
     object-fit: contain;
     margin: auto;
     display: block;
-    max-width: 700px;
+    max-width: 600px;
+    /* width: 80%; */
 }
 .modal img:hover{
     opacity: 1;
@@ -264,7 +265,20 @@ section{
         height: 300px;
     }
 }
-
+@media screen and (max-width: 750px){
+    .modal{
+        /* display: flex; */
+        align-items: center;
+    }
+    /* .modal img{
+        max-width: 600px;
+    } */
+}
+@media screen and (max-width: 650px){
+    .modal img{
+        max-width: 550px;
+    }
+}
 @media screen and (max-width: 630px){
     
     .card{
@@ -288,6 +302,9 @@ section{
     }
     .breakline img{
         height: 20px;
+    }
+    .modal img{
+        max-width: 480px;
     }
 }
 
@@ -356,9 +373,13 @@ section{
 
 
 }
-
+@media screen and (max-width: 500px){
+    .modal img{
+        max-width: 400px;
+    }
+}
 @media screen and (max-width: 400px){
-    .card{
+    /* .card{
         width: 260px;
     }
     .left-side-card{
@@ -377,7 +398,7 @@ section{
     }
     .side-info{
         font-size:1em;
-    }
+    } */
 
     .breakline{
         font-size: 1.3em;
@@ -389,8 +410,15 @@ section{
     .breakline img{
         height: 15px;
     }
+    .modal img{
+        max-width: 350px;
+    }
 }
-
+@media screen and (max-width: 350px){
+    .modal img{
+        max-width: 300px;
+    }
+}
 @media screen and (max-width: 335px){
 
     .breakline{

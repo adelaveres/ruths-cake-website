@@ -177,7 +177,7 @@ section{
   /* width: 80%;  */
 }
 .modal img:hover{
-    opacity: 1;
+    opacity: 1; 
 }
 
 .modal {
@@ -383,26 +383,26 @@ section{
 }
 
 @media screen and (max-width: 400px){
-    .card{
+    /* .card{
         width: 260px;
-    }
-    .left-side-card{
+    } */
+    /* .left-side-card{
         height: 330px;
-    }
-    .img-wrapper{
+    } */
+    /* .img-wrapper{
         margin: 5px;
         padding: 10px;
         width: 235px;
         height: 235px;
-    }
-    .img-wrapper span{
+    } */
+    /* .img-wrapper span{
         font-size: 1.7em;
         font-weight: 700;
         line-height: 1;
     }
     .side-info{
         font-size:1em;
-    }
+    } */
     .modal img{
         max-width: 350px;
     }

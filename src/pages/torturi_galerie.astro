@@ -2,17 +2,30 @@
 import BaseLayout from "../components/BaseLayout.astro";
 import "../styles/torturi_galerie.css";
 const photoSources_aniversare = [
-    "20231014_130153", "20231021_101121", "20231023_115219",
-    "20231024_170129", "20231112_140037", "20231118_143645",
-    "20231209_134055", "20231230_121621", "20231230_175004",
-    "20231231_193247", "20240120_134350", "20240128_123218",
-    "20240216_062938", "20240317_082630", "20240323_101447",
-    "20240327_220934", "20240330_101640", "20240330_144659",
-    "20240402_104002", "20240406_122213", "20231230_121617",
-    "20240413_132843", "tort_gradinita",
-    "20231028_221923", "20230825_162757", "20230826_133656",
-    "20230909_104144", "20230916_135615", "20230922_160637",
-    "20230923_110015", "20230926_110400", "20231119_083632",
+    "20231112_140037-min","zile_nastere18","20240120_134350-min","zile_nastere5","20231209_134055-min",
+    "20231014_130153-min",
+     "20231021_101121-min",
+     "20231230_121621-min", "20231230_175004-min",
+     "20240128_123218-min",
+    "20240216_062938-min", "20240317_082630-min", "20240323_101447-min",
+      "20240330_144659-min",
+    "20240402_104002-min", "20240406_122213-min",
+    "20240413_132843-min", "tort_gradinita-min",
+    "20231028_221923-min", "20230825_162757-min", "20230826_133656-min",
+    "20230909_104144-min", "20230916_135615-min", "20230922_160637-min",
+    "20230923_110015-min", "20230926_110400-min",
+    "zile_nastere1", "zile_nastere2", "zile_nastere3",
+    "zile_nastere4","zile_nastere6","zile_nastere7",
+    "zile_nastere8","zile_nastere9","zile_nastere10",
+    "zile_nastere11","zile_nastere12","zile_nastere13",
+    "zile_nastere14","zile_nastere15",
+    "zile_nastere16","zile_nastere17",
+    "zile_nastere19","zile_nastere20","zile_nastere21",
+    "zile_nastere22","zile_nastere23","zile_nastere24",
+    "zile_nastere25","zile_nastere26","zile_nastere27",
+    "zile_nastere28","zile_nastere29","zile_nastere30",
+    "zile_nastere31","zile_nastere32","zile_nastere33",
+    "zile_nastere34","zile_nastere35","zile_nastere36"
     
 ]; 
 
@@ -21,7 +34,7 @@ const photoSources_botez =[
 ];
 
 const photoSources_majorat =[
-    "cake_majorate", "20221028_152016-min","20240614_215922-min",
+    "20240601_190518","20240614_215922-min","cake_majorate", "20221028_152016-min",
     "rsz_20240731_160859", "20230923_183747-min"
 ];
 
@@ -49,7 +62,7 @@ const photoSources_caserola=[
                 { 
                 photoSources_aniversare.map( (photoSource) => (
                     <div class="img-wrapper">
-                        <img  src={`/images/torturi/zile_nastere/${photoSource}-min.jpg`} alt="Little Cake">
+                        <img  src={`/images/torturi/zile_nastere/${photoSource}.jpg`} alt="Little Cake">
 
                         <!-- The Modal -->
                         <div class="modal">

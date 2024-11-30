@@ -72,18 +72,18 @@ function setInitialSlidePhotos(){
   
   
   if(window.innerWidth <= 600){
-    wedPhoto.src = "/images/slideshow/wed_cake_slideshow.jpeg";
-    cakesPhoto.src = "/images/slideshow/wed_cake_example_slideshow_cut.jpeg";
-    candybarPhoto.src = "/images/slideshow/candybar_slideshow_cut.jpeg";
-    annivPhoto.src = "/images/slideshow/tort_ursulet_artificii.jpeg";
-    specialPhoto.src = "/images/slideshow/special_cakes_cut.jpg";
+    wedPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/wed_cake_slideshow.jpeg";
+    cakesPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/wed_cake_example_slideshow_cut.jpeg";
+    candybarPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/candybar_slideshow_cut.jpeg";
+    annivPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/tort_ursulet_artificii.jpeg";
+    specialPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/special_cakes_cut.jpg";
   }else
   if(window.innerWidth < 840){
-    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";
-    annivPhoto.src = "/images/slideshow/birthday_collage_medium_screen.jpg";
-    specialPhoto.src = "/images/slideshow/special_collage_medium_screen.jpg";
+    cakesPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/wed_cake_collage_medium_screen.jpg";
+    annivPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/birthday_collage_medium_screen.jpg";
+    specialPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/special_collage_medium_screen.jpg";
   }else if(window.innerWidth < 970){
-    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";
+    cakesPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/wed_cake_collage_medium_screen.jpg";
 
       
   }
@@ -94,38 +94,38 @@ function handleResizeScreen(){
 
   if(window.innerWidth < 600){
     
-    wedPhoto.src = "/images/slideshow/wed_cake_slideshow.jpeg";
-    cakesPhoto.src = "/images/slideshow/wed_cake_example_slideshow_cut.jpeg";
-    candybarPhoto.src = "/images/slideshow/candybar_slideshow_cut.jpeg";
-    annivPhoto.src = "/images/slideshow/tort_ursulet_artificii.jpeg";
-    specialPhoto.src = "/images/slideshow/special_cakes_cut.jpg";
+    wedPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/wed_cake_slideshow.jpeg";
+    cakesPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/wed_cake_example_slideshow_cut.jpeg";
+    candybarPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/candybar_slideshow_cut.jpeg";
+    annivPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/tort_ursulet_artificii.jpeg";
+    specialPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/mobile_slideshow/special_cakes_cut.jpg";
   
   }else
   if(window.innerWidth < 840){
     // reset
-    wedPhoto.src = "/images/slideshow/wed_collage7.jpg";
-    candybarPhoto.src = "/images/slideshow/candybar_collage2.jpg";
+    wedPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/wed_collage7.jpg";
+    candybarPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/candybar_collage2.jpg";
     //
-    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";
-    annivPhoto.src = "/images/slideshow/birthday_collage_medium_screen.jpg";
-    specialPhoto.src = "/images/slideshow/special_collage_medium_screen.jpg";
+    cakesPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/wed_cake_collage_medium_screen.jpg";
+    annivPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/birthday_collage_medium_screen.jpg";
+    specialPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/special_collage_medium_screen.jpg";
   }
   else if(window.innerWidth < 970){
     // reset
-    wedPhoto.src = "/images/slideshow/wed_collage7.jpg";
-    candybarPhoto.src = "/images/slideshow/candybar_collage2.jpg";
-    annivPhoto.src = "/images/slideshow/birthday_collage_res.jpg";
-    specialPhoto.src = "/images/slideshow/special_ocasions_collage_res.jpg";
+    wedPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/wed_collage7.jpg";
+    candybarPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/candybar_collage2.jpg";
+    annivPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/birthday_collage_res.jpg";
+    specialPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/special_ocasions_collage_res.jpg";
     //
-    cakesPhoto.src = "/images/slideshow/wed_cake_collage_medium_screen.jpg";   
+    cakesPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/medium_screen_slideshow/wed_cake_collage_medium_screen.jpg";   
   }
   else{
     //reset all
-    wedPhoto.src = "/images/slideshow/wed_collage7.jpg";
-    candybarPhoto.src = "/images/slideshow/candybar_collage2.jpg";
-    annivPhoto.src = "/images/slideshow/birthday_collage_res.jpg";
-    specialPhoto.src = "/images/slideshow/special_ocasions_collage_res.jpg";
-    cakesPhoto.src = "/images/slideshow/wed_cake_collage_res.jpg";  
+    wedPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/wed_collage7.jpg";
+    candybarPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/candybar_collage2.jpg";
+    annivPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/birthday_collage_res.jpg";
+    specialPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/special_ocasions_collage_res.jpg";
+    cakesPhoto.src = "https://adela-maris.sirv.com/Images/Adina_website/slideshow_homepage/wed_cake_collage_res.jpg";  
   }
 }
   

@@ -55,16 +55,16 @@ function showSlide(n) {
 
   // slides[slideIndex-1].style.display = "block";
   let currentSlide = slides[slideIndex-1];
-  $(currentSlide).fadeIn(800).delay(3100).fadeOut(800);
+  $(currentSlide).fadeIn(800).delay(2000).fadeOut(800);
   // dots[slideIndex-1].className += " active";
 
 }
 
 function showSlides() {
+  
   slideIndex++;
   showSlide(slideIndex);
-  setTimeout(showSlides, 4700);
-  
+  setTimeout(showSlides, 3600);
   
 }
 

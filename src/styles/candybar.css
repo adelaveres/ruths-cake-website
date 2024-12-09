@@ -115,7 +115,7 @@ section{
 
 .zoom-in{
     animation-name: zoom;
-    animation-duration: 6s;
+    animation-duration: 8s;
     
 }
 @keyframes zoom {

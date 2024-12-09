@@ -29,12 +29,13 @@ const { lat = 47.800600, lng = 22.905210, zoom = 16 } = Astro.props;
     const lng = parseFloat(mapElement.getAttribute("data-lng"));
     const zoom = parseInt(mapElement.getAttribute("data-zoom"), 10);
 
-    const map = L.map("map");
+    
     // Initialize the map using the retrieved values
     setTimeout(() => {
       map.invalidateSize();
       map.setView([47.800600, 22.905210], 16); // Explicitly recenter after invalidating size
     }, 100);
+    const map = L.map("map");
     
     
     // Use OpenStreetMap tiles

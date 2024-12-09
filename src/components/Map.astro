@@ -3,7 +3,7 @@ import "leaflet/dist/leaflet.css"; // Import Leaflet styles
 
 //Set default map options and allow customization through props
 
-const { lat = 47.800600, lng = 22.905210, zoom = 15 } = Astro.props;
+const { lat = 47.800600, lng = 22.905210, zoom = 16 } = Astro.props;
 ---
 
 <!-- Pass lat, lng, and zoom as data attributes on the map div  -->
@@ -30,6 +30,10 @@ const { lat = 47.800600, lng = 22.905210, zoom = 15 } = Astro.props;
     const zoom = parseInt(mapElement.getAttribute("data-zoom"), 10);
 
     // Initialize the map using the retrieved values
+    setTimeout(() => {
+      map.invalidateSize();
+      map.setView([47.800600, 22.905210], 16); // Explicitly recenter after invalidating size
+    }, 100);
     const map = L.map("map").setView([lat, lng], zoom);
     
     // Use OpenStreetMap tiles
@@ -52,8 +56,8 @@ const { lat = 47.800600, lng = 22.905210, zoom = 15 } = Astro.props;
 // Add a marker to the map using the custom icon
     L.marker([lat, lng], { icon: markerIcon }).addTo(map)
       .bindPopup("Ruth's Cake - Cakeshop")
-      .openPopup();
   }
+
 
   // Run the map initialization after the component is mounted
   initMap();

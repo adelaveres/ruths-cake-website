@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^4.11.0",
+    "astro-robots-txt": "^1.0.0",
     "jquery": "^3.7.1",
     "leaflet": "^1.9.4"
   }

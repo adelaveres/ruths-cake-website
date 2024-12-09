@@ -53,6 +53,7 @@ h2{
     height: 100%;
     position: relative;
     top: 1px;
+    margin: 0 10px;
 }
 .social-btn:hover{
     color: pink;

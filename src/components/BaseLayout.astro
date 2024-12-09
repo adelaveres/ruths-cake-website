@@ -56,10 +56,15 @@ import '../styles/styles.css';
 			<Navigation/>	
 		</header>
 
-		<main>
+		<div id="loading-symbol">
+			<i class="fa fa-spinner fa-spin fa-4x fa-fw"></i>
+		</div>
+
+		<main id="page-content">
 			<slot />
 		</main>
-        
+
+        <script src="../loading_symbol.js"></script>
 		
 	</body>
 

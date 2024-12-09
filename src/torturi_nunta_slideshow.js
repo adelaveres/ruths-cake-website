@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+  document.getElementById("loading-symbol").style.display = "none";
+  document.getElementById("wed-content").style.display = "flex";
+});
+
 let slideIndexTorturi = 0;
 let slidesTorturi = document.getElementsByClassName("slide-item-torturi");
 

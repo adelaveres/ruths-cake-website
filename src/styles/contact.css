@@ -42,7 +42,18 @@ h2{
     font-style: normal;
     font-size: 1.3em;
 }
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
 .contact-social-btn{
+
     display: inline;
     text-decoration: none;
     font-weight: 550;
@@ -54,11 +65,15 @@ h2{
     /* position: relative; */
     /* top: 4px; */
     margin: 0 2px;
+    
+}
+
+.address:hover{
+    color: pink;
 }
 .contact-social-btn:hover{
     color: pink;
 }
-
 
 
 

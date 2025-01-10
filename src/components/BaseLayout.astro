@@ -2,18 +2,36 @@
 import Navigation from "../components/Navigation.astro"
 import '../styles/styles.css';
 
+export interface BaseLayoutProps {
+  title?: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { title = "Ruth's Cake", 
+description = "Default Description", 
+keywords = "default,keywords" } = Astro.props;
+
+
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/images/cake_photo_tab.png" />
+		
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="google-site-verification" content="EVLyp1x5UKwqUU6elhEZ-2s-47BdbgblXoQewMltI2Q"/>
+		
+		<meta name="description" content={description} />
+    	<meta name="keywords" content={keywords} />
+
+		<title>{title}</title>
+
+
+		<link rel="icon" type="image/svg+xml" href="/images/cake_photo_tab.png" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
-
-
+		
 		<!-- Adding JQUERY -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<!-- imported fonts -->
@@ -50,7 +68,7 @@ import '../styles/styles.css';
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-		<title>Ruth's Cake</title>
+		
 	</head>
 
 	<body>

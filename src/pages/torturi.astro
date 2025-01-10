@@ -1,10 +1,14 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
 import "../styles/torturi.css";
-
+const meta={
+    title: "Torturi Satu Mare - Ruth's Cake",
+    description: "Torturi personalizate în Satu Mare. Alegem împreună gustul potrivit, designul pe care îl dorești iar de calitate ne ocupăm noi! Comandă acum!",
+    keywords: "torturi, satu mare"
+}
 
 ---
-<BaseLayout>
+<BaseLayout {...meta}>
 	<section>
         
         <div id="cards-wrapper">

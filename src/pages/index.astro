@@ -1,8 +1,14 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
 import Slideshow from "../components/Slideshow.astro";
+
+const meta={
+    title: "Laborator Cofetarie Satu Mare - Ruth's Cake",
+    description: "Cauți cofetărie în Satu Mare? La Ruth's Cake găsești torturi personalizate și prăjituri de casă cu ingrediente premium. Sună acum și comandă!",
+    keywords: "cofetarie, satu mare"
+}
 ---
-<BaseLayout>
+<BaseLayout {...meta}>
     
         <Slideshow/>
 
